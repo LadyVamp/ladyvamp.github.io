@@ -623,6 +623,9 @@ footer {
 
 .project-image {
     float: left;
+    img {
+        height: 100px !important;
+    }
 }
 
 .project-info {
@@ -645,6 +648,7 @@ footer {
         font-size: 0.9em;
     }
 }
+
 
 /*
     -------------------------------

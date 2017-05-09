@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<title>AG converter</title>
+
+<script language="javascript">
+    function convert() {
+        var point=document.getElementById('point').value; // получаем данные из формы, значение баллов
+        var course ="6.671875"; //1 балл в рублях, "Пополнение карты Тройка на 256 руб" стоит 1708 баллов 
+        var division;
+        division = parseFloat(point) / parseFloat(course); 
+
+        document.getElementById('out').innerHTML =  point + " баллов " + " = " +  parseInt(division) + " рублей " + "<br>";
+
+        console.log(division);
+}
+</script>
+</head>
+
+<body class="text-center">
+    <section >
+        <header>
+            <h1>Конвертер баллов "Активный гражданин"</h1>
+        </header>
+        <form name="enter">
+            <h4>Введите количество баллов</h4>
+            <input id="point" type="text"> <br>
+        </form>
+        <button type="button" class="btn btn-primary" onclick="convert()">Перевести</button>
+        <div id="out"></div>
+    </section>
+    <footer>
+        <a href="http://ag.mos.ru/" target="_blank" title="Перейти на ag.mos.ru">Официальный сайт</a>
+    </footer>
+</body>
+</html>
