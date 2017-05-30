@@ -2,97 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b168012-7ad0-4268-9e9c-9b29b0fef213" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task1/img/aeroflot.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task1/img/airfrance.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task1/img/airserbia.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task1/img/alitalia.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task1/img/departure.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task1/img/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task1/img/landing.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task1/img/s7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task1/img/ural.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task1/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task1/js/footable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task1/styles/footable.core.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task1/styles/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task2/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task2/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/fonts/MyriadProRegular/MyriadProRegular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/fonts/MyriadProRegular/MyriadProRegular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/fonts/MyriadProRegular/MyriadProRegular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/fonts/MyriadProRegular/MyriadProRegular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/images/bg-track.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/images/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/images/handle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/images/pause.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/images/play.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/images/volume.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/audio.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-2.1.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/external/jquery/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-bg_flat_10_000000_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-bg_glass_100_f6f6f6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-bg_glass_100_fdf5ce_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-icons_228ef1_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-icons_ef8c08_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-icons_ffd27a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/images/ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/jquery-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/jquery-ui.structure.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/jquery-ui.structure.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/jquery-ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery-ui/jquery-ui.theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/files/de.srt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/files/en.srt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/files/fr.srt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/files/ja.srt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/files/nl.srt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/files/tweens.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/files/video2.ogv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/fullscreen.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/subtitles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/sync.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/timeline.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/tocanvas-ascii.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/tocanvas-chroma.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/tocanvas-effects.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/tocanvas-greyscale.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/demos/tweens.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/media.jquery.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/source/jquery.media.canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/source/jquery.media.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/source/jquery.media.sync.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/source/jquery.media.timeline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/source/jquery.media.tocanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/source/jquery.media.tracks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/source/jquery.media.tweens.capture.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/source/jquery.media.tweens.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/tests/api.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/tests/index-tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/tests/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/tests/timeline-tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/jquery.media/tests/timeline.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/js/waveform.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/tracks/1.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/tracks/2.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/shri/task3/tracks/3.mp3" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/nashestvie/countdown.html" afterPath="$PROJECT_DIR$/projects/nashestvie/countdown.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -110,17 +20,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="219" column="14" lean-forward="true" selection-start-line="219" selection-start-column="14" selection-end-line="219" selection-end-column="14" />
+            <state relative-caret-position="323">
+              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="countdown.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/nashestvie/countdown.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3460">
+              <caret line="225" column="39" lean-forward="false" selection-start-line="225" selection-start-column="39" selection-end-line="225" selection-end-column="39" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>назад</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -129,6 +57,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/projects/nashestvie/countdown.html" />
       </list>
     </option>
   </component>
@@ -180,6 +109,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ladyvamp.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ladyvamp.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nashestvie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ladyvamp.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ladyvamp.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -212,12 +173,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496171445220</updated>
-      <workItem from="1496171456175" duration="566000" />
+      <workItem from="1496171456175" duration="3568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="566000" />
+    <option name="totallyTimeSpent" value="3568000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -265,9 +226,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="219" column="14" lean-forward="true" selection-start-line="219" selection-start-column="14" selection-end-line="219" selection-end-column="14" />
+        <state relative-caret-position="323">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/nashestvie/countdown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3460">
+          <caret line="225" column="39" lean-forward="false" selection-start-line="225" selection-start-column="39" selection-end-line="225" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
