@@ -11,7 +11,7 @@
 <link href="images/favicon-countdown.ico" rel="icon" type="image/x-icon">
 <script src="js/countdown.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script src="js/jquery.tooltip.js"></script> <!--for Tooltip-->
+<script src="js/jquery.tooltip.js"></script> <!--tooltip стилизованные hover-подсказки на названиях билетов-->
 <script type="text/javascript">
 	jQuery(document).ready(function(){
 		jQuery('.spoiler-text').hide()
@@ -20,9 +20,8 @@
 		})
 	})
 </script>
-
-	<script src="https://code.highcharts.com/highcharts.js"></script>
-	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script> <!--for price graph-->
+<script src="https://code.highcharts.com/modules/exporting.js"></script>  <!--for price graph-->
 </head>
 <body>
 <!-- Yandex.Metrika counter -->
@@ -57,7 +56,7 @@
 
   <div class="bg-gradient"></div>
   <div class="container">
-    <a href="../../index.html#projects"><img src="images/Arrow-Left.png" height="70" title="Назад на главную" alt="title="Назад на главную" "id="arrow"></a>
+    <a href="../../index.html#projects"><img src="images/Arrow-Left.png" height="70" title="Назад на главную" alt="Назад на главную" id="arrow"></a>
 
   	<br>
     <h1>Нашествие 2017</h1>
@@ -78,7 +77,7 @@
 				<div class="price price1 tooltiper">
 				<h3>До 31 декабря 2016</h3>
 					<h4 class="blue">Билеты</h4>
-					<a href="#" title="Даёт право на один проход на территорию фестиваля. Именной билет.">Входной</a> — 1650 рублей <br> 
+					<a href="#" title="Даёт право на один проход на территорию фестиваля. Именной билет.">Входной</a> — 1650 рублей <br>
 					<a href="#" title="Даёт право на один проход на территорию фестиваля. Доступ в FAN-зону (при наличии браслета). Именной билет.">FAN</a> — 3650 рублей <br>
 					<a href="#" title="Даёт право многократного прохода на территорию фестиваля. Доступ в FAN-зону, VIP-зону и на трибуны (при наличии браслета). Именной билет.">VIP</a> — 7100 рублей<br>
 					<a href="#" title="Персональный менеджер, трансферы, отдельный шатер в VIP-зоне бесплатное пиво в VIP-зоне, балкон на Главной сцене, доступ в backstage фестиваля.">Super VIP</a> — 95000 рублей<br>
@@ -186,7 +185,7 @@
 		 <div class="spoiler-wrapper">
 		 <div class="spoiler folded"><a href="javascript:void(0);" title="Нажмите, чтобы развернуть"><h2>Цены на билеты в 2016 году &#9660;</h2></a></div>
 		 <div class="spoiler-text table-hover">
-			 <div class="col-md-12 col-sm-6">
+			 <div class="col-md-offset-2 col-md-10 col-sm-offset-2 col-sm-10">
 			  <table class="table price center">
 				  <thead>
 				  <tr>
@@ -250,22 +249,17 @@
 				  </tbody>
 			  </table>
 		  </div>
-			 <div class="col-md-12 col-sm-6">
+			 <div class="col-md-12 col-sm-12">
 				<div id="price2016"></div>
 			 </div>
-	  </div>
-		  </div>
-	  <!--</div>-->
-
-	  <br/>
+	  </div> <!--/spoiler-text-->
+	 </div> <!--/spoiler-wrapper-->
 
     <footer>
     <span><a href="http://nashestvie.ru/" target="_blank" title="Перейти на nashestvie.ru">Официальный сайт</a></span><br>
-
       <p>
         &copy; 2016 Nadezhda Dyakova <br> All rights reserved
       </p>
-
         <div>
             <!-- Yandex.Metrika informer -->
             <a href="https://metrika.yandex.ru/stat/?id=&amp;from=informer"
@@ -288,14 +282,13 @@
 
 	<script type="text/javascript">
     Highcharts.chart('price2016', {
-
         title: {
             text: 'Динамика цен на Нашествие 2016'
         },
         xAxis: {
             type: 'datetime',
             dateTimeLabelFormats: { // don't display the dummy year
-                month: '%e. %b',
+                month: '%e %b',
                 year: '%b'
             },
             title: {
@@ -386,8 +379,6 @@
         }]
 
     });
-
-
 
 </script>
 
