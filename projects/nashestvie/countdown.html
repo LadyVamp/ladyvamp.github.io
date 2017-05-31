@@ -292,45 +292,97 @@
         title: {
             text: 'Динамика цен на Нашествие 2016'
         },
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: { // don't display the dummy year
+                month: '%e. %b',
+                year: '%b'
+            },
+            title: {
+                text: 'Даты'
+            }
+        },
 
         yAxis: {
             title: {
                 text: 'Цена, руб.'
             }
         },
+        tooltip: {
+            headerFormat: '<b>{series.name}</b><br>',
+            pointFormat: '{point.x:%e %b}: {point.y:.0f} руб.'
+        },
+
         legend: {
             layout: 'vertical',
             align: 'right',
             verticalAlign: 'middle'
         },
 
-//        plotOptions: {
-//            series: {
-//                pointStart: 2010
-//            }
-//        },
+        plotOptions: {
+            spline: {
+                marker: {
+                    enabled: true
+                }
+            }
+        },
 
         series: [{
             name: 'Входной',
-            data: [1500, 1500, 1600, 1800]
+            data: [
+                [Date.UTC(2015, 11, 31), 1500],
+                [Date.UTC(2016, 3, 1), 1500],
+                [Date.UTC(2016, 5, 1), 1600],
+                [Date.UTC(2016, 6, 1), 1800]
+            ]
         }, {
             name: 'FAN',
-            data: [3000, 3500, 4500, 5000]
+            data: [
+                [Date.UTC(2015, 11, 31), 3000],
+                [Date.UTC(2016, 3, 1), 3500],
+                [Date.UTC(2016, 5, 1), 4500],
+                [Date.UTC(2016, 6, 1), 5000]
+            ]
         }, {
             name: 'VIP',
-            data: [6000, 7000, 8500, 10000]
+            data: [
+                [Date.UTC(2015, 11, 31), 6000],
+                [Date.UTC(2016, 3, 1), 7000],
+                [Date.UTC(2016, 5, 1), 8500],
+                [Date.UTC(2016, 6, 1), 10000]
+            ]
         }, {
             name: 'Парковка',
-            data: [2000, 2200, 2500, 2500]
+            data: [
+                [Date.UTC(2015, 11, 31), 2000],
+                [Date.UTC(2016, 3, 1), 2200],
+                [Date.UTC(2016, 5, 1), 2500],
+                [Date.UTC(2016, 6, 1), 2500]
+            ]
         }, {
 			name: 'VIP Парковка',
-			data: [3100, 3300, 3500, 3800]
+            data: [
+                [Date.UTC(2015, 11, 31), 3100],
+                [Date.UTC(2016, 3, 1), 3300],
+                [Date.UTC(2016, 5, 1), 3500],
+                [Date.UTC(2016, 6, 1), 3800]
+            ]
 		}, {
 			name: 'Палатка',
-			data: [1900, 2100, 2300, 2500]
+            data: [
+                [Date.UTC(2015, 11, 31), 1900],
+                [Date.UTC(2016, 3, 1), 2100],
+                [Date.UTC(2016, 5, 1), 2300],
+                [Date.UTC(2016, 6, 1), 2500]
+            ]
 		}, {
             name: 'VIP Палатка',
-            data: [3400, 3900, 4000, 4500]
+            data: [
+                [Date.UTC(2015, 11, 31), 3400],
+                [Date.UTC(2016, 3, 1), 3900],
+                [Date.UTC(2016, 5, 1), 4000],
+                [Date.UTC(2016, 6, 1), 4500]
+            ]
         }]
 
     });
