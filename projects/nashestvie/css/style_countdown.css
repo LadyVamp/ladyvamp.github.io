@@ -236,4 +236,23 @@ h3 {
 
 .price .green {
     color: #2ecc71;
-} 
+}
+.price .orange {
+    color: #ff6600;
+}
+
+.price .yellow {
+    color: #ffff00;
+}
+
+table .center {
+    text-align: center;
+}
+
+#price2016 {
+    min-width: 310px;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto
+}
+
