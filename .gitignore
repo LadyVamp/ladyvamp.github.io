@@ -1,2 +1,4 @@
 node_modules/
+
+#настройки для webstorm:
 .idea/
