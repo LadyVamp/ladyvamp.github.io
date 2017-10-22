@@ -63,7 +63,7 @@ function CDT4(){
 
 function CDT5(){
 
- var tl = new Date('2017/09/22 00:00:00');
+ var tl = new Date('2018/01/6 00:00:00');
 
  var timer = new CountdownTimer('CDT5',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Time is up!</span></span>');
  timer.countDown();
