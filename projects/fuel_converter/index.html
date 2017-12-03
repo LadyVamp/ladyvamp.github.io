@@ -17,11 +17,11 @@
         var resConsumption = parseFloat((distance/100)*consumption100);
         var resPrice = parseFloat(resConsumption*price);
 
-        document.getElementById('out1').innerHTML =  "Количество потраченного топлива: " + resConsumption + " л";
-        document.getElementById('out2').innerHTML =  "Стоимость: " + resPrice + " рублей";
+        document.getElementById('out1').innerHTML =  "Количество потраченного топлива: " + resConsumption.toFixed(2) + " л";
+        document.getElementById('out2').innerHTML =  "Стоимость: " + resPrice.toFixed(2) + " рублей";
 
-        console.log(resConsumption);
-        console.log(resPrice);
+        // console.log(resConsumption);
+        // console.log(resPrice);
 }
 </script>
 </head>
@@ -34,12 +34,12 @@
                 <h1>Калькулятор расхода топлива</h1>
             </header>
              <form name="enter">
-                <h4>Расстояние</h4>
-                <input id="distance" type="text" class="colortext"> <br>
+                <h4>Расстояние, км</h4>
+                <input id="distance" type="text" class="colortext" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  < 57)? true : event.keyCode == 46"> <br> <!--числа от 0 до 9 и точка-->
                 <h4>Расход топлива на 100 км</h4>
-                <input id="consumption100" type="text" class="colortext"> <br>
-                <h4>Стоимость 1 литра топлива</h4>
-                <input id="price" type="text" class="colortext"> <br>
+                <input id="consumption100" type="text" class="colortext" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  < 57)? true : event.keyCode == 46" title="В случае дробного числа использовать точку"> <br>
+                <h4>Стоимость 1 литра топлива, руб.</h4>
+                <input id="price" type="text" class="colortext" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  < 57)? true : event.keyCode == 46"> <br>
             </form>
             <button type="button" class="btn btn-warning" onclick="convert()">Рассчитать</button>
             <div id="out1"></div>
