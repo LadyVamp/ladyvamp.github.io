@@ -1,13 +1,15 @@
 
 body {
-  background-color: #ecf0f1;
+  // background-color: #ecf0f1;
   text-align: center;
+  background: url(../img/bmw-forest.jpg); 
+  color: #fff;
 }
 h1, a:hover {
   color: #f39c12;
 }
 #out1, #out2 {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 a {
@@ -19,6 +21,13 @@ a {
 a:hover {
 	text-decoration: none;
 }
+
+.colortext {
+    // background-color: #ffe; /* Цвет фона */
+    color: #34495e; /* Цвет текста */
+    padding-left: 5px;
+   }
+
 
 //прижать футер к низу
 * {
