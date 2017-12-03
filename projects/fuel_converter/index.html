@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<title>Fuel consumption calculator</title>
+
+<script language="javascript">
+    function convert() {
+        var distance=document.getElementById('distance').value; // получаем данные из формы, расстояние
+        var consumption100=document.getElementById('consumption100').value; // расход на 100 км
+        var price=document.getElementById('price').value; // цена 1 литра
+        var resConsumption = parseFloat((distance/100)*consumption100);
+        var resPrice = parseFloat(resConsumption*price);
+
+        document.getElementById('out1').innerHTML =  "Количество потраченного топлива: " + resConsumption + " л";
+        document.getElementById('out2').innerHTML =  "Стоимость: " + resPrice + " рублей";
+
+        console.log(resConsumption);
+        console.log(resPrice);
+}
+</script>
+</head>
+
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-offset-2">
+            <header>
+                <h1>Калькулятор расхода топлива</h1>
+            </header>
+             <form name="enter">
+                <h4>Расстояние</h4>
+                <input id="distance" type="text"> <br>
+                <h4>Расход топлива на 100 км</h4>
+                <input id="consumption100" type="text"> <br>
+                <h4>Стоимость 1 литра топлива</h4>
+                <input id="price" type="text"> <br>
+            </form>
+            <button type="button" class="btn btn-primary" onclick="convert()">Рассчитать</button>
+            <div id="out1"></div>
+            <div id="out2"></div>
+        </div>
+      </div>
+    <footer>
+        Copyright &copy; 2017 Nadezhda Dyakova aka LadyVamp
+    </footer>
+
+</div>
+</body>

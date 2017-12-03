@@ -1,0 +1,39 @@
+
+body {
+  background-color: #ecf0f1;
+  text-align: center;
+}
+h1, a:hover {
+  color: #f39c12;
+}
+#out1, #out2 {
+  padding-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #16a085;
+  font-size: 14px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+//прижать футер к низу
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  display: table;
+  height: 100%;
+}
+.row {
+  display: table-row;
+  height: 100%;
+}
