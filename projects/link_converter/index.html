@@ -8,10 +8,10 @@
 <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 <link href="css/styles.css" rel="stylesheet">
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<title>String converter</title>
+<title>Link converter</title>
 
 <script language="javascript">
-    function convert() {
+    function convertName() {
         var blockstr=document.getElementById('blockstr').value; // получаем данные из формы, заблокированная строка
         document.getElementById('out1').innerHTML =  blockstr.replace( /-/g, " " )+" site: aliexpress.com";
 }
@@ -43,34 +43,41 @@
       <div class="row">
         <div class="col-sm-8 col-md-offset-2">
             <header>
-                <h1>Очиститель ссылок</h1>
-                <p class="secret">special for /cyclecult ;) <br/> on /biketourist not work</p>
-            </header>
-            <form name="enter">
-                <h4>%2Fназвание%2F</h4>
-                <p class="code">2015-ROCKBROS-HOT-Sale-MTB-Ultralight-Bike-Bicycle-Pedals-Mountain-Road-Bike-Pedal-Cycling-Aluminum-Alloy</p>
-                <input id="blockstr" type="text" class="colortext"> <br> 
-            </form>
-            <button type="button" class="btn btn-warning" onclick="convert()">Очистить</button>
-            <div id="out1"></div>
-            <button class="btn btn-clipboard" data-clipboard-target="#out1">Скопировать в буфер обмена</button>
-            <script>
-            new Clipboard('.btn-clipboard'); // библиотека
-            </script>
-            <br/><br/>
-            <form name="enter">
-                <h4>Полная ссылка</h4>
-                <p class="code">
-                 http://s.click.aliexpress.com/deep_link.htm?aff_short_key=jqf2Rf6&af=564857&cv=25781683&cn=43p0nq9uab8g5x6nmpp1p31ojhdr7d6q&dp=v5_43p0nq9uab8g5x6nmpp1p31ojhdr7d6q&mall_affr=pr1&dl_target_url=https%3A%2F%2Fru.aliexpress.com%2Fitem%2F9-16-BMX-Ultralight-Bicycle-Pedals-Aluminum-Alloy-3-Colors-Mountain-MTB-Bike-Pedals-Fixie-Road%2F32512024298.html%3Fspm%3Da2g0s.13010208.99999999.273.POuuTV%26af%3D564857%26cv%3D25781683%26cn%3D43p0nq9uab8g5x6nmpp1p31ojhdr7d6q%26dp%3Dv5_43p0nq9uab8g5x6nmpp1p31ojhdr7d6q%26mall_affr%3Dpr1&afref=
+                <h1 title="special for /cyclecult ;)">Очиститель ссылок</h1>
+                <p>
+                    На входе реферальная ссылка на товар с паблика /cyclecult, пойманная расширением для хрома uBlock. <a href="https://snag.gy/YtrGUw.jpg" target="_blank">Скриншот</a><br/>
+                    На выходе запрос с параметром для поиска на aliexpress.
                 </p>
-                <input id="fullLink" type="text" class="colortext"> <br> 
-            </form>
-            <button type="button" class="btn btn-warning" onclick="convertFullLink()">Очистить полную ссылку</button>
-            <div id="out2" class="code"></div>
-            <button class="btn btn-clipboard" data-clipboard-target="#out2">Скопировать в буфер обмена</button>
-            <script>
-            new Clipboard('.btn-clipboard'); 
-            </script>
+            </header>
+            <div class="converter1">
+                <form>
+                    <h4>1. %2Fназвание%2F, пример:</h4>
+                    <p class="code">9-16-BMX-Ultralight-Bicycle-Pedals-Aluminum-Alloy-3-Colors-Mountain-MTB-Bike-Pedals-Fixie-Road</p>
+                    <input id="blockstr" type="text"> <br> 
+                </form>
+                <button type="button" class="btn btn-warning" onclick="convertName()">Очистить</button>
+                <div id="out1"></div>
+                <button class="btn btn-clipboard btn-info" data-clipboard-target="#out1">Скопировать в буфер обмена</button>
+                <script>
+                new Clipboard('.btn-clipboard'); // библиотека
+                </script>
+                </div>
+
+            <div class="converter2">
+                <form>
+                    <h4>2. Полная ссылка, пример:</h4>
+                    <p class="code">
+                     http://s.click.aliexpress.com/deep_link.htm?aff_short_key=jqf2Rf6&af=564857&cv=25781683&cn=42p0nva6wgn6hhu2ckgp9yz956km00np&dp=v5_42p0nva6wgn6hhu2ckgp9yz956km00np&mall_affr=pr1&dl_target_url=https%3A%2F%2Fru.aliexpress.com%2Fitem%2F9-16-BMX-Ultralight-Bicycle-Pedals-Aluminum-Alloy-3-Colors-Mountain-MTB-Bike-Pedals-Fixie-Road%2F32512024298.html%3Fspm%3Da2g0s.13010208.99999999.273.POuuTV%26af%3D564857%26cv%3D25781683%26cn%3D42p0nva6wgn6hhu2ckgp9yz956km00np%26dp%3Dv5_42p0nva6wgn6hhu2ckgp9yz956km00np%26mall_affr%3Dpr1&afref=
+                    </p>
+                    <input id="fullLink" type="text"> <br> 
+                </form>
+                <button type="button" class="btn btn-warning" onclick="convertFullLink()">Очистить полную ссылку</button>
+                <div id="out2" class="code"></div>
+                <button class="btn btn-clipboard btn-info" data-clipboard-target="#out2">Скопировать в буфер обмена</button>
+                <script>
+                new Clipboard('.btn-clipboard'); 
+                </script>
+                </div>
         </div>
       </div>
     <footer>

@@ -1,21 +1,21 @@
 body {
   text-align: center;
-  // background: url(../img/bmw-forest.jpg); 
   background: url(../img/china-wall.jpg); 
   color: #000;
 }
+
+h1, a:hover {
+  color: #f0ad4e;
+}
+
 h4, h5 {
   color: #fff;
 }
 
-.secret { //hide уже зарезервирован o_O
-  color: #bebebe;
-  font-size: 12px;
+.col-sm-8 {
+  background-color: rgba(0, 0, 0, 0.45);
 }
-h1, a:hover {
-  // color: #f39c12;
-  color: #c0392b;
-}
+
 #out1, #out2 {
   padding-top: 10px;
   color: #fff;
@@ -31,24 +31,33 @@ a:hover {
 	text-decoration: none;
 }
 
-.colortext { 
-    padding-left: 5px;
-    max-width: 500px;
-   }
+// .colortext { 
+//     padding-left: 5px;
+//    }
 
-footer {
-  color: #ecf0f1;
+input {
+    max-width: 500px;
+    padding-left: 5px;
+}
+
+p {
+  color: #fff;
 }
 
 .code {
     background-color: rgba(0, 0, 0, 0.1);
-    color: #bebebe;
+    color: #fff;
     font-family: monospace;
     font-size: large;
     line-height: 1;
     padding: 4px;
     word-break: break-all;
-    font-size: 14px;
+    font-size: 12px;
+}
+
+
+footer {
+  color: #ecf0f1;
 }
 
 //прижать футер к низу
