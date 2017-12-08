@@ -13,7 +13,7 @@
 <script language="javascript">
     function convert() {
         var blockstr=document.getElementById('blockstr').value; // получаем данные из формы, заблокированная строка
-        document.getElementById('out1').innerHTML =  blockstr.replace( /-/g, " " ) ;
+        document.getElementById('out1').innerHTML =  blockstr.replace( /-/g, " " )+" site: aliexpress.com";
 }
 
     function convertFullLink() {
@@ -31,7 +31,7 @@
 
         newstr = newstr.split('%2F')[0]; //удалить все после определенного символа
         console.log(newstr.length); 
-        newstr = newstr.replace(/-/g, " " );
+        newstr = newstr.replace(/-/g, " ") + " site: aliexpress.com";
         document.getElementById('out2').innerHTML =  newstr;
 }
 

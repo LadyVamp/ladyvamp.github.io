@@ -1,6 +1,7 @@
 body {
   text-align: center;
-  background: url(../img/bmw-forest.jpg); 
+  // background: url(../img/bmw-forest.jpg); 
+  background: url(../img/china-wall.jpg); 
   color: #000;
 }
 h4, h5 {
@@ -8,11 +9,12 @@ h4, h5 {
 }
 
 .secret { //hide уже зарезервирован o_O
-  color: #000;
+  color: #bebebe;
   font-size: 12px;
 }
 h1, a:hover {
-  color: #f39c12;
+  // color: #f39c12;
+  color: #c0392b;
 }
 #out1, #out2 {
   padding-top: 10px;
@@ -21,7 +23,7 @@ h1, a:hover {
 
 a {
   text-decoration: none;
-  color: #2980b9;
+  color: #1B1BB3;
   font-size: 14px;
 }
 
@@ -35,7 +37,7 @@ a:hover {
    }
 
 footer {
-  color: #bebebe;
+  color: #ecf0f1;
 }
 
 .code {
