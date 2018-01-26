@@ -66,11 +66,11 @@
             </header>
              <form name="enter">
                 <h4>Расстояние, км</h4>
-                <input id="distance" type="text" class="colortext" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  < 57)? true : event.keyCode == 46"> <br> <!--числа от 0 до 9 и точка-->
+                <input id="distance" type="text" class="colortext" value="700" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  <= 57)? true : event.keyCode == 46"> <br> <!--числа от 0 до 9 и точка-->
                 <h4>Расход топлива на 100 км</h4>
-                <input id="consumption100" type="text" class="colortext" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  < 57)? true : event.keyCode == 46" title="В случае дробного числа использовать точку"> <br>
+                <input id="consumption100" type="text" class="colortext" value="7" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  <= 57)? true : event.keyCode == 46" title="В случае дробного числа использовать точку"> <br>
                 <h4>Стоимость 1 литра топлива, руб.</h4>
-                <input id="price" type="text" class="colortext" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  < 57)? true : event.keyCode == 46"> <br>
+                <input id="price" type="text" class="colortext" value="40" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  <= 57)? true : event.keyCode == 46"> <br>
             </form>
             <button type="button" class="btn btn-warning" onclick="convert()">Рассчитать</button>
             <div id="out1"></div>
