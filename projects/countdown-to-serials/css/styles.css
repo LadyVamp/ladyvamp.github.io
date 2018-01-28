@@ -1,0 +1,101 @@
+/*Variables*/
+body {
+  background-color: #636e72;
+  color: #9fa7aa;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+h1 {
+  color: #ffffff;
+}
+.bbt {
+  background-color: #00b894;
+  width: 100%;
+  height: 215px;
+}
+.bbt__timer {
+  color: #ffffff;
+}
+.bbt__description {
+  color: #ffffff;
+  padding: 20px;
+}
+.bbt__img img {
+  height: 200px;
+  width: 100%;
+}
+.sherlock {
+  background-color: #0984e3;
+  width: 100%;
+  height: 215px;
+}
+.sherlock__timer {
+  color: #ffffff;
+}
+.sherlock__description {
+  color: #ffffff;
+  padding: 20px;
+}
+.sherlock__img img {
+  height: 200px;
+  width: 100%;
+}
+.silicon-valley {
+  background-color: #059ebc;
+  width: 100%;
+  height: 215px;
+}
+.silicon-valley__timer {
+  color: #ffffff;
+}
+.silicon-valley__description {
+  color: #ffffff;
+  padding: 20px;
+}
+.silicon-valley__img img {
+  height: 200px;
+  width: 100%;
+}
+.black-mirror {
+  background-color: #001f19;
+  width: 100%;
+  height: 215px;
+}
+.black-mirror__timer {
+  color: #ffffff;
+}
+.black-mirror__description {
+  color: #ffffff;
+  padding: 20px;
+}
+.black-mirror__img img {
+  height: 200px;
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  display: table;
+  height: 100%;
+}
+.row {
+  display: table-row;
+  height: 100%;
+}
+.copyright {
+  color: #7e9ba8;
+}
+.copyright a {
+  text-decoration: none;
+}
+.copyright a:hover {
+  color: #1e8eee;
+}
+.copyright a:visited {
+  color: #3071a9;
+}
