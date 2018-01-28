@@ -1,11 +1,19 @@
-/*Variables*/
+/* Для компиляции less запустить Koala и сделать drag-and-drop / refresh */
+/* Variables */
 body {
   background-color: #636e72;
   color: #9fa7aa;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 h1 {
-  color: #ffffff;
+  color: #fdcb6e;
+}
+.bbt__timer,
+.sherlock__timer,
+.silicon-valley__timer,
+.black-mirror__timer {
+  font-size: 30px;
+  padding: 20px;
 }
 .bbt {
   background-color: #00b894;
@@ -62,6 +70,7 @@ h1 {
 }
 .black-mirror__timer {
   color: #ffffff;
+  font-size: 30px;
 }
 .black-mirror__description {
   color: #ffffff;
@@ -70,6 +79,16 @@ h1 {
 .black-mirror__img img {
   height: 200px;
   width: 100%;
+}
+footer p {
+  color: #ffffff;
+}
+footer a {
+  text-decoration: none;
+  color: #fdcb6e;
+}
+footer a:hover {
+  color: #cf8803;
 }
 * {
   margin: 0;
@@ -86,16 +105,4 @@ body {
 .row {
   display: table-row;
   height: 100%;
-}
-.copyright {
-  color: #7e9ba8;
-}
-.copyright a {
-  text-decoration: none;
-}
-.copyright a:hover {
-  color: #1e8eee;
-}
-.copyright a:visited {
-  color: #3071a9;
 }

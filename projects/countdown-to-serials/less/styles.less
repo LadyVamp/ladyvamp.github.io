@@ -1,13 +1,15 @@
-/*Variables*/
+/* Для компиляции less запустить Koala и сделать drag-and-drop / refresh */
+/* Variables */
+// Палитра https://flatuicolors.com/palette/us
 @bgColor: #636e72;
 @bbtStripColor: #00b894;
 @sherlockStripColor: #0984e3;
 @silicon-valleyStripColor: mix(@bbtStripColor, @sherlockStripColor);
 @black-mirrorStripColor: darken(@bbtStripColor, 30%);
+@linkYellow: #fdcb6e;
 
 @stripW: 100%;
 @stripH: 215px;
-
 
 body {
   background-color: @bgColor;
@@ -16,7 +18,7 @@ body {
 }
 
 h1 {
- color: contrast(@bgColor);
+ color: @linkYellow;
 }
 
 .stripSize() {   //Mixin
@@ -32,6 +34,12 @@ h1 {
 .padding() {
 	padding: 20px;
 }
+
+.bbt__timer, .sherlock__timer, .silicon-valley__timer, .black-mirror__timer {
+  font-size: 30px;
+  .padding;
+}
+
 .bbt{
   background-color: @bbtStripColor;
   .stripSize;
@@ -97,6 +105,7 @@ h1 {
 
 .black-mirror__timer {
 	color: contrast(@black-mirrorStripColor);
+  font-size: 30px;
 }
 
 .black-mirror__description {
@@ -106,6 +115,19 @@ h1 {
 
 .black-mirror__img img {
 	.imgSize;
+}
+
+footer {
+  p {
+    color: contrast(@bgColor);
+  }
+   a {
+     text-decoration: none;
+     color: @linkYellow;
+   }
+     a:hover {
+         color: darken(@linkYellow, 30%);
+     }
 }
 
 //прижать футер к низу
@@ -124,19 +146,4 @@ body {
 .row {
   display: table-row;
   height: 100%;
-}
-
-.copyright {
-   color: darken(softlight(#607D8B, #fff), 10%);
-   
-   a {
-     text-decoration: none;
-
-   }
-     a:hover {
-         color: saturate(#428bca, 30%);
-     }
-     a:visited {
-         color: darken(#428bca, 10%);
-     }
 }
