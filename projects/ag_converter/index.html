@@ -11,13 +11,11 @@
 <script language="javascript">
     function convert() {
         var point=document.getElementById('point').value; // получаем данные из формы, значение баллов
-        var course ="6.85714286"; //1 балл в рублях, "Пополнение карты Тройка на 175 руб" стоит 1200 баллов 
+        var course ="6.87"; //1 балл в рублях, "Пополнение карты Тройка на 175 руб" стоит 1200 баллов 
         var division;
-        division = parseFloat(point) / parseFloat(course); 
-
-        document.getElementById('out').innerHTML =  point + " баллов " + " = " +  parseInt(division) + " рублей " + "<br>";
-
+        division = Math.round(parseFloat(point/course)); 
         console.log(division);
+        document.getElementById('out').innerHTML =  point + " баллов " + " = " +  parseInt(division) + " рублей " + "<br>";
 }
 </script>
 </head>
