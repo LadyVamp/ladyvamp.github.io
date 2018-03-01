@@ -1,7 +1,20 @@
-/* Contdonwn */
+/* Для компиляции less запустить Koala и сделать drag-and-drop / refresh */
+/* Variables */
+// Палитра https://flatuicolors.com/palette/es
+
+@blue: #227093;
+@red: #b33939;
+@green: #218c74;
+@orange: #ffb142;
+@light-orange: lighten(@orange, 10%);
+@light-blue: lighten(@blue, 30%);
+@dark-red: darken(@red, 20%);
+@desert: #ccae62;
+
+
 
 body {
-    background: #222 url('../images/new-bg.gif') repeat; /*было bg.gif*/ 
+    background: #222 url('../img/new-bg.gif') repeat; /*было bg.gif*/ 
     color: #fff;
     -moz-text-shadow: 0 -1px 0 #000;
     -webkit-text-shadow: 0 -1px 0 #000;
@@ -17,55 +30,104 @@ body {
     left: 50%;
     z-index: -1;
     margin: -500px 0 0 -500px;
-    background: url('../images/bg-gradient.png') no-repeat center;
+    background: url('../img/bg-gradient.png') no-repeat center;
 }
 
 .container {
     text-align: center;
     margin: 0 auto;
     width: 800px;
-    height: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -200px 0 0 -400px;
 }
-    
-h1,
-h2 {
-    margin: 0;
-    color: #eee;
-    -moz-text-shadow: 0 3px 3px #000000;
-    -webkit-text-shadow: 0 3px 3px #000000;
-    text-shadow: 0 3px 3px #000000;
+  
+.blue {
+  color: @blue;
+} 
+.red {
+  color: @red;
+} 
+.green {
+  color: @green;
+} 
+.orange {
+  color: @orange;
+} 
+
+.archive17__price1, .countdown18__prices1 {
+  h3 {
+    color: @light-blue;
+  }
 }
-    
-h1 {
-    font-size: 60px;
-    margin: 0 0 10px;
-    line-height: 1;
+.archive17__price2 {
+  h3 {
+    color: @green;
+  }
+}
+.archive17__price3 {
+  h3 {
+    color: @orange;
+  }
+}
+.archive17__price4 {
+  h3 {
+    color: @dark-red;
+  }
 }
 
 h2 {
-    font-size: 25px;
+  color: @blue;
 }
 
+
+.archive17__btn,.archive16__btn {
+  .btn-link {
+    color: @orange;
+    font-size: 30px;
+  }
+  
+}
+
+// Картинки
+.center_img {
+   img {
+      width: 600px;
+    }
+}
+.archive17__map {
+  img {
+      width: 500px;
+    }
+}
+.countdown18__map {
+  img {
+      width: 500px;
+      margin: 20px 0;
+    }
+}
+
+
+
+// Счетчик
 #CDT {
     font-size: 60px;
     color: #eee;
     margin: 70px 0 100px;
     font-weight: bold;
-}
 
-#CDT .number-wrapper {
-    margin: 10px;
-    -moz-box-shadow: 0 5px 8px #000000;
-    -webkit-box-shadow: 0 5px 8px #000000;
-    box-shadow: 0 5px 8px #000000;
-    position: relative;
-}
+    .number-wrapper
+    {
+      margin: 10px;
+      -moz-box-shadow: 0 5px 8px #000000;
+      -webkit-box-shadow: 0 5px 8px #000000;
+      box-shadow: 0 5px 8px #000000;
+      position: relative;
+    }
 
-#CDT .number {
+   .number 
+   {
     display: inline-block;
     *display: inline;
     *zoom: 1;
@@ -104,9 +166,9 @@ h2 {
     -moz-text-shadow: 0 3px 3px #000000;
     -webkit-text-shadow: 0 3px 3px #000000;
     text-shadow: 0 3px 3px #000000;
-}
-       
-#CDT .line {
+  }
+
+    .line {
     position: absolute;
     width: 100%;
     height: 1px;
@@ -116,8 +178,10 @@ h2 {
     -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-       
+  }
+
+  } // /CDT
+   
 .caption {
    font-size: 12px;
    position: absolute;
@@ -127,86 +191,8 @@ h2 {
    width: 100%;
    color: #777;
 }
-    
-footer {
-    margin-top: 40px;
-    font-size: 11px;
-    font-weight: normal;
-    text-align: center;
-    color: #777;
-}
 
-footer p {
-    margin: .5em 0;
-    line-height: 1.5;
-}
-
-footer a { 
-    color: #3133CB; 
-    text-decoration: none; 
-    font-size: 20px; 
-}
-
-footer a:hover
- { color: #F535D6;
-  text-decoration: none; 
-}
-
-.spoiler a{
-     font-size: 22px;
-     color: #000000;
-     text-decoration: none;
-}
- 
-.spoiler:hover {
-     cursor: pointer;
-}
- 
-.spoiler-text {
-     margin: 15px 25px;
-     font-size: 17px;
-     display: inline-block;
-}
-
-h3 {
-    font-size: 20px;
-    color: #99ffff;
-}
-
-.spoiler a {
-    color: #ffcc33;
-}
-
-.spoiler a:hover
- { color: #F535D6;
-  text-decoration: none; 
-}
-
-.price {
-    float: left;
-    margin: 6px;
-    width: 30%;
-}
-
-.price2 h3{
-    color: #33cc00;
-}
-
-.price3 h3{
-    color: #ff9900;
-}
-
-.price4 h3{
-    color: #cc0000;
-    margin-top: 30px;
-}
-
-.price4 {
-   width: 100%; 
-   margin: 0 auto;
-   text-align: center;
-}
-
+//Подсказки
 #tooltip {
     width: 200px;
     position: absolute;
@@ -219,6 +205,7 @@ h3 {
     font-size: 12px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
+    font-size: 10px;
 }
 
 .tooltiper a {
@@ -226,32 +213,50 @@ h3 {
     color: #ffff66;
 }
 
-.price .blue {
-    color: #3498db;
-} 
 
-.price .red {
-    color: #e74c3c;
-} 
-
-.price .green {
-    color: #2ecc71;
+footer p {
+  color: #ffffff;
 }
-.price .orange {
-    color: #ff6600;
+footer a {
+  text-decoration: none;
+  color: #fdcb6e;
+}
+footer a:hover {
+  color: #cf8803;
 }
 
-.price .yellow {
-    color: #ffff00;
+
+
+/* Small Devices, Phones */
+@media only screen and (max-width : 370px) {
+ 
+ .center_img, .archive17__map, .countdown18__map {
+    img {
+        max-width: 300px;
+      }
+  }
+  #CDT {
+    font-size: 30px;
+  }
+
 }
 
-#price2016 {
-    min-width: 310px;
-    max-width: 800px;
-    height: 400px;
-    margin: 0 auto
-}
 
-.map img {
-    width: 100%;
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+ 
+ .center_img, .archive17__map, .countdown18__map {
+    img {
+        max-width: 375px;
+      }
+  }
+  #CDT {
+    font-size: 40px;
+  }
+
+  .table {
+    width: 50%;
+    margin-left: 200px;
+  }
+
 }

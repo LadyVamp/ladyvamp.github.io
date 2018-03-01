@@ -1,0 +1,200 @@
+/* Для компиляции less запустить Koala и сделать drag-and-drop / refresh */
+/* Variables */
+body {
+  background: #222222 url('../img/new-bg.gif') repeat;
+  /*было bg.gif*/
+  color: #fff;
+  -moz-text-shadow: 0 -1px 0 #000000;
+  -webkit-text-shadow: 0 -1px 0 #000000;
+  text-shadow: 0 -1px 0 #000000;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+.bg-gradient {
+  position: fixed;
+  width: 1000px;
+  height: 1000px;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  margin: -500px 0 0 -500px;
+  background: url('../img/bg-gradient.png') no-repeat center;
+}
+.container {
+  text-align: center;
+  margin: 0 auto;
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -400px;
+}
+.blue {
+  color: #227093;
+}
+.red {
+  color: #b33939;
+}
+.green {
+  color: #218c74;
+}
+.orange {
+  color: #ffb142;
+}
+.archive17__price1 h3,
+.countdown18__prices1 h3 {
+  color: #70bcde;
+}
+.archive17__price2 h3 {
+  color: #218c74;
+}
+.archive17__price3 h3 {
+  color: #ffb142;
+}
+.archive17__price4 h3 {
+  color: #662020;
+}
+h2 {
+  color: #227093;
+}
+.archive17__btn .btn-link,
+.archive16__btn .btn-link {
+  color: #ffb142;
+  font-size: 30px;
+}
+.center_img img {
+  width: 600px;
+}
+.archive17__map img {
+  width: 500px;
+}
+.countdown18__map img {
+  width: 500px;
+  margin: 20px 0;
+}
+#CDT {
+  font-size: 60px;
+  color: #eee;
+  margin: 70px 0 100px;
+  font-weight: bold;
+}
+#CDT .number-wrapper {
+  margin: 10px;
+  -moz-box-shadow: 0 5px 8px #000000;
+  -webkit-box-shadow: 0 5px 8px #000000;
+  box-shadow: 0 5px 8px #000000;
+  position: relative;
+}
+#CDT .number {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: #000;
+  background-image: linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+  background-image: -o-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+  background-image: -moz-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+  background-image: -webkit-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+  background-image: -ms-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+  -webkit-border-top-right-radius: 7px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 7px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 0 12px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border: 1px solid #555;
+  -moz-box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+  -moz-text-shadow: 0 3px 3px #000000;
+  -webkit-text-shadow: 0 3px 3px #000000;
+  text-shadow: 0 3px 3px #000000;
+}
+#CDT .line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 52%;
+  left: 0;
+  background: #000;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.caption {
+  font-size: 12px;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #777;
+}
+#tooltip {
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid #1593db;
+  background-color: #e5f5fe;
+  color: #000;
+  padding: 5px;
+  opacity: 0.9;
+  font-size: 12px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 10px;
+}
+.tooltiper a {
+  text-decoration: none;
+  color: #ffff66;
+}
+footer p {
+  color: #ffffff;
+}
+footer a {
+  text-decoration: none;
+  color: #fdcb6e;
+}
+footer a:hover {
+  color: #cf8803;
+}
+/* Small Devices, Phones */
+@media only screen and (max-width: 370px) {
+  .center_img img,
+  .archive17__map img,
+  .countdown18__map img {
+    max-width: 300px;
+  }
+  #CDT {
+    font-size: 30px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .center_img img,
+  .archive17__map img,
+  .countdown18__map img {
+    max-width: 375px;
+  }
+  #CDT {
+    font-size: 40px;
+  }
+  .table {
+    width: 50%;
+    margin-left: 200px;
+  }
+}
