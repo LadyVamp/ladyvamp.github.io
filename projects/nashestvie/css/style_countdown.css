@@ -251,3 +251,7 @@ h3 {
     height: 400px;
     margin: 0 auto
 }
+
+.map img {
+    width: 100%;
+}
