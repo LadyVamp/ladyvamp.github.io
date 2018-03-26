@@ -9,7 +9,7 @@ h4 {
 h1, a:hover {
   color: #f39c12;
 }
-#out1, #out2 {
+.out{
   padding-top: 10px;
   color: #fff;
 }

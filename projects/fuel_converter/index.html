@@ -18,7 +18,9 @@
         var resPrice = parseFloat(resConsumption*price);
 
         document.getElementById('out1').innerHTML =  "Количество потраченного топлива: " + resConsumption.toFixed(2) + " л";
-        document.getElementById('out2').innerHTML =  "Стоимость: " + resPrice.toFixed(2) + " рублей";
+        document.getElementById('out2').innerHTML =  "Стоимость: " + resPrice.toFixed(2) + " рублей";        
+        document.getElementById('out3').innerHTML =  "Количество потраченного топлива: " + 2*resConsumption.toFixed(2) + " л";
+        document.getElementById('out4').innerHTML =  "Стоимость: " + 2*resPrice.toFixed(2) + " рублей";
 
         // console.log(resConsumption);
         // console.log(resPrice);
@@ -68,13 +70,20 @@
                 <h4>Расстояние, км</h4>
                 <input id="distance" type="text" class="colortext" value="700" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  <= 57)? true : event.keyCode == 46"> <br> <!--числа от 0 до 9 и точка-->
                 <h4>Расход топлива на 100 км</h4>
-                <input id="consumption100" type="text" class="colortext" value="7" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  <= 57)? true : event.keyCode == 46" title="В случае дробного числа использовать точку"> <br>
+                <input id="consumption100" type="text" class="colortext" value="8" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  <= 57)? true : event.keyCode == 46" title="В случае дробного числа использовать точку"> <br>
                 <h4>Стоимость 1 литра топлива, руб.</h4>
                 <input id="price" type="text" class="colortext" value="40" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  <= 57)? true : event.keyCode == 46"> <br>
             </form>
             <button type="button" class="btn btn-warning" onclick="convert()">Рассчитать</button>
-            <div id="out1"></div>
-            <div id="out2"></div>
+            <div class="out">
+                <p>В одну сторону</p>
+                <div id="out1"></div>
+                <div id="out2"></div>  
+                <br/>
+                <p>Туда-обратно</p>
+                <div id="out3"></div>
+                <div id="out4"></div>
+            </div>
         </div>
       </div>
     <footer>
