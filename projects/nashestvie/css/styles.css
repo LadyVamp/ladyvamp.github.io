@@ -40,15 +40,19 @@ body {
 .orange {
   color: #ffb142;
 }
+.countdown18__prices a {
+  text-decoration: none;
+}
 .archive17__price1 h3,
 .countdown18__prices1 h3 {
   color: #70bcde;
 }
-.countdown18__prices2 h3,
-.archive17__price2 h3 {
+.archive17__price2 h3,
+.countdown18__prices2 h3 {
   color: #218c74;
 }
-.archive17__price3 h3 {
+.archive17__price3 h3,
+.countdown18__prices3 h3 {
   color: #ffb142;
 }
 .archive17__price4 h3 {
