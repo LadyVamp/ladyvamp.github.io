@@ -55,7 +55,8 @@ body {
 .countdown18__prices3 h3 {
   color: #ffb142;
 }
-.archive17__price4 h3 {
+.archive17__price4 h3,
+.countdown18__prices4 h3 {
   color: #662020;
 }
 h2 {
