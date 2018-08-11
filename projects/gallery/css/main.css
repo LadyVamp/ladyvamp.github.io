@@ -1,9 +1,10 @@
+/*Если фото не отображаются на сервере github, изменить расширение фоток с капса на обычное: .JPG -> .jpg*/
 body { 
 	margin: 0; 
 	height: 100%;
 	background: #333; 
 	font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .flex-container { 
@@ -40,15 +41,14 @@ body {
 }
 
 .flex-element:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 footer {
-	/*background: #666;*/
 	height: 30px;
-  	margin-top: -30px;
-  	padding-left: 20px;
-  	color: #ecf0f1;
+  margin-top: -30px;
+  padding-left: 20px;
+  color: #ecf0f1;
 }
