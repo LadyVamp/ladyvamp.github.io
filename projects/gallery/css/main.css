@@ -44,9 +44,11 @@ body {
   -webkit-transform: scale(1.7);
   -ms-transform: scale(1.7);
   transform: scale(1.7);
-  -moz-transition: all 0.7s ease-out;
- -o-transition: all 0.7s ease-out;
- -webkit-transition: all 0.7s ease-out;
+/*  плавное увеличение, но на сервере картинки дергаются o_O */
+/*  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  -webkit-transition: all 0.7s ease-out;*/
+ 
 }
 
 footer {
