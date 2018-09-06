@@ -65,7 +65,7 @@ $(document).ready(function(){
 			$(this).clone().appendTo(ul);
 		});
 
-		ul.appendTo('#gallery-container');
+		ul.appendTo('#container');
 
 		// Creating a menu item. The unordered list is added
 		// as a data parameter (available via .data('list'):

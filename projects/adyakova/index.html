@@ -97,10 +97,13 @@
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Портфолио</h2>
-        <div class="container-fluid" style="margin-top:20px;">
+        <div class="container">
+                <!-- проекты -->
+                <div class="container-fluid" style="margin-top:20px;">
+<!--         <h1 style="text-align:center;color:hotpink;">Portfolio Gallery Filter</h1><br> -->
         <div class="row">
             <nav id="filter"></nav>
-            <section id="gallery-container">
+            <section id="container">
             <ul id="stage">
                 <li data-tags="Графика"><img src="img/graphic/1.jpg" alt="Illustration" /></li>
                 <li data-tags="Графика"><img src="img/graphic/2.jpg" alt="Illustration" /></li>                
@@ -122,10 +125,9 @@
                 <!-- <li data-tags="Watercolor,Графика"><img src="img/shots/7.jpg" alt="Illustration" /></li> -->
             </ul>
         </section>
-        </div>
 
-        </div> <!--/container-fluid-->
-    </div>
+            </div> <!--/container-->
+        </div>
     <!-- End #projects -->
 
     <div id="skills">
@@ -175,17 +177,18 @@
     </footer>
     <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!--для кнопки вверх-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>  <!--для фильтрации в галерее-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script src="js/jquery.quicksand.js"></script>
     <script src="js/gallery.js"></script>
+</body>
+
+</html>
+
+
 <!-- todo
 1. шрифт кириллический
 2. блок "обо мне"
 3. увеличение картинок по клику
--->
-</body>
-</html>
-
-
+4. все картинки в img (image -> img) -->
