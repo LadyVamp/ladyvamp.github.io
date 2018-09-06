@@ -167,25 +167,6 @@ Github site: http://github.com/razorjack/quicksand
             rawDest.style.position = 'absolute';
             rawDest.style.top = offset.top - correctionOffset.top + 'px';
             rawDest.style.left = offset.left - correctionOffset.left + 'px';
-            
-            
-    
-            
-
-            // if (options.adjustHeight === 'dynamic') {
-            //     // If destination container has different height than source container
-            //     // the height can be animated, adjusting it to destination height
-            //     $sourceParent.animate({height: $dest.height()}, options.duration, options.easing);
-            // } else if (options.adjustHeight === 'auto') {
-            //     destHeight = $dest.height();
-            //     if (parseFloat(sourceHeight) < parseFloat(destHeight)) {
-            //         // Adjust the height now so that the items don't move out of the container
-            //         $sourceParent.css('height', destHeight);
-            //     } else {
-            //         //  Adjust later, on callback
-            //         adjustHeightOnCallback = true;
-            //     }
-            // }
                 
             // Now it's time to do shuffling animation
             // First of all, we need to identify same elements within source and destination collections    
