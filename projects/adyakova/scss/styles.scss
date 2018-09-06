@@ -22,6 +22,7 @@ $text: #74808a;
 //Define social colors
 $behance: #0057ff;
 $vk: #4c75a3;
+$youtube: #cc181e; 
 
 /*
     ---------------------
@@ -237,6 +238,14 @@ footer {
 
         &:hover {
             color: $behance;
+        }
+    }
+}
+.youtube {
+    a {
+
+        &:hover {
+            color: $youtube;
         }
     }
 }

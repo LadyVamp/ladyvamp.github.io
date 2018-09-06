@@ -139,6 +139,9 @@ footer {
 .behance a:hover {
   color: #0057ff; }
 
+.youtube a:hover {
+  color: #cc181e; }
+
 .btn-rounded-white {
   display: inline-block;
   color: #fff;
