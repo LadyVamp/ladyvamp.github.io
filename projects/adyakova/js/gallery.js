@@ -29,7 +29,7 @@ $(document).ready(function(){
 	});
 
 	// Creating the "Everything" option in the menu:
-	createList('Everything',items);
+	createList('Все работы',items);
 
 	// Looping though the arrays in itemsByTags:
 	$.each(itemsByTags,function(k,v){

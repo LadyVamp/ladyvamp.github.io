@@ -5,7 +5,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #941A0D ;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -21,6 +21,7 @@ $text: #74808a;
 
 //Define social colors
 $behance: #0057ff;
+$vk: #4c75a3;
 
 /*
     ---------------------
@@ -226,7 +227,7 @@ footer {
         padding: 10px;
 
         &:hover {
-            color: $base-color;
+            color: $vk;
         }
     }
 }
@@ -235,7 +236,7 @@ footer {
     a {
 
         &:hover {
-            color: $behance !important;
+            color: $behance;
         }
     }
 }
@@ -474,7 +475,7 @@ footer {
 
     h2 {
         color: $heading;
-        margin-bottom: 50px;
+        margin-bottom: 0;
     }
 }
 
@@ -726,7 +727,7 @@ footer {
 
 
 #filter {
-    background: url("../img/bar.png") repeat-x 0 -94px;
+    background: url("../img/bar2.png") repeat-x 0 -94px;
     display: block;
     height: 39px;
     margin: 55px auto;
@@ -740,7 +741,7 @@ footer {
 }
 
 #filter:before, #filter:after {
-    background: url("../img/bar.png") no-repeat;
+    background: url("../img/bar2.png") no-repeat;
     height: 43px;
     position: absolute;
     top: 0;
@@ -776,7 +777,7 @@ footer {
 }
 
 #filter a.active{
-    background: url("../img/bar.png") repeat-x 0 -138px;
+    background: url("../img/bar2.png") repeat-x 0 -138px;
     box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2),
                 -1px 0 0 rgba(255, 255, 255, 0.2),
                 1px 0 1px rgba(0,0,0,0.2) inset,
@@ -797,14 +798,10 @@ footer {
 }
 
 #container li{
-
     float: left;
-    height: 96px;
     list-style: none outside none;
     margin: 6px;
     position: relative;
-    width: 125px;
-    
     -moz-box-shadow: 0 0 5px #000;
     -webkit-box-shadow: 0 0 5px #000;
     box-shadow: 0 0 5px #000;
@@ -816,4 +813,10 @@ footer {
 
 #container ul.hidden{
     display:none;
+}
+
+#stage {
+    img {
+        max-height: 150px;
+    }
 }

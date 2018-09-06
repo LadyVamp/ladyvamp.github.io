@@ -49,15 +49,15 @@ header {
     display: inline-block; }
   header a {
     display: block;
-    color: #3498db;
+    color: #941A0D;
     padding: 10px; }
     header a:hover {
-      color: #217dbb;
+      color: #651209;
       text-decoration: none;
       background: #eee;
       border-radius: 4px; }
     header a:focus {
-      color: #3498db;
+      color: #941A0D;
       text-decoration: none; }
   header.active {
     display: block; }
@@ -74,7 +74,7 @@ header {
   position: fixed;
   right: 15px;
   top: 10px;
-  color: #3498db;
+  color: #941A0D;
   font-size: 1.5em;
   z-index: 20;
   padding: 0 7px;
@@ -90,7 +90,7 @@ header {
   padding-right: 15px;
   padding-top: 10px;
   cursor: pointer;
-  color: #3498db; }
+  color: #941A0D; }
   #mobile-menu-close span {
     font-size: 0.5em;
     text-transform: uppercase; }
@@ -134,10 +134,10 @@ footer {
     color: #74808a;
     padding: 10px; }
     .social a:hover {
-      color: #3498db; }
+      color: #4c75a3; }
 
 .behance a:hover {
-  color: #0057ff !important; }
+  color: #0057ff; }
 
 .btn-rounded-white {
   display: inline-block;
@@ -147,7 +147,7 @@ footer {
   border-radius: 30px;
   transition: 0.5s ease all; }
   .btn-rounded-white:hover {
-    color: #3498db;
+    color: #941A0D;
     background: #fff;
     text-decoration: none; }
 
@@ -172,7 +172,7 @@ footer {
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: #3498db; }
+    background: #941A0D; }
 
 .background-alt {
   background: #f2f2f5; }
@@ -209,7 +209,7 @@ footer {
     letter-spacing: 0.05em;
     line-height: 0.9em; }
   #lead-content h2 {
-    color: #a0cfee;
+    color: #ed4533;
     font-weight: 500;
     font-size: 2.25em;
     margin-bottom: 15px; }
@@ -222,7 +222,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(33, 125, 187, 0.8);
+  background: rgba(101, 18, 9, 0.8);
   z-index: 1; }
 
 #lead-down {
@@ -241,7 +241,7 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid #a0cfee;
+    border: 3px solid #ed4533;
     text-align: center; }
   #lead-down i {
     animation: pulsate 1.5s ease;
@@ -319,7 +319,7 @@ footer {
   text-align: center; }
   #projects h2 {
     color: #374054;
-    margin-bottom: 50px; }
+    margin-bottom: 0; }
 
 .project {
   position: relative;
@@ -485,7 +485,7 @@ footer {
     Green filter bar
 -----------------------------*/
 #filter {
-  background: url("../img/bar.png") repeat-x 0 -94px;
+  background: url("../img/bar2.png") repeat-x 0 -94px;
   display: block;
   height: 39px;
   margin: 55px auto;
@@ -497,7 +497,7 @@ footer {
   box-shadow: 0 4px 4px #000; }
 
 #filter:before, #filter:after {
-  background: url("../img/bar.png") no-repeat;
+  background: url("../img/bar2.png") no-repeat;
   height: 43px;
   position: absolute;
   top: 0;
@@ -527,7 +527,7 @@ footer {
   text-decoration: none; }
 
 #filter a.active {
-  background: url("../img/bar.png") repeat-x 0 -138px;
+  background: url("../img/bar2.png") repeat-x 0 -138px;
   box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2), -1px 0 0 rgba(255, 255, 255, 0.2), 1px 0 1px rgba(0, 0, 0, 0.2) inset, -1px 0 1px rgba(0, 0, 0, 0.2) inset; }
 
 /*----------------------------
@@ -541,11 +541,9 @@ footer {
 
 #container li {
   float: left;
-  height: 96px;
   list-style: none outside none;
   margin: 6px;
   position: relative;
-  width: 125px;
   -moz-box-shadow: 0 0 5px #000;
   -webkit-box-shadow: 0 0 5px #000;
   box-shadow: 0 0 5px #000; }
@@ -555,5 +553,8 @@ footer {
 
 #container ul.hidden {
   display: none; }
+
+#stage img {
+  max-height: 150px; }
 
 /*# sourceMappingURL=styles.css.map */
