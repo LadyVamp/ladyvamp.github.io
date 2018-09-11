@@ -99,32 +99,101 @@
     <div id="projects" class="background-alt">
         <h2 class="heading">Портфолио</h2> <br>
         <div class="container-fluid" style="margin-top:20px;">
-        <div class="row">
-            <nav id="filter"></nav>
-            <div id="container">
-            <ul id="stage">
-                <li data-tags="Графика"><img src="img/graphic/1.jpg" alt="Illustration" /></li>
-                <li data-tags="Графика"><img src="img/graphic/2.jpg" alt="Illustration" /></li>                
-                <li data-tags="Графика"><img src="img/graphic/3.jpg" alt="Illustration" /></li>
-                <li data-tags="Графика"><img src="img/graphic/4.jpg" alt="Illustration" /></li>                
-                <li data-tags="Графика"><img src="img/graphic/5.jpg" alt="Illustration" /></li>
-                <li data-tags="Графика"><img src="img/graphic/6.jpg" alt="Illustration" /></li>                
-                <li data-tags="Графика"><img src="img/graphic/7.jpg" alt="Illustration" /></li>
-                <li data-tags="Графика"><img src="img/graphic/8.jpg" alt="Illustration" /></li>                
-                <li data-tags="Графика"><img src="img/graphic/9.jpg" alt="Illustration" /></li>
-                <li data-tags="Графика"><img src="img/graphic/10.jpg" alt="Illustration" /></li>                
-                <li data-tags="Графика"><img src="img/graphic/11.jpg" alt="Illustration" /></li>
-                <li data-tags="Графика"><img src="img/graphic/12.jpg" alt="Illustration" /></li>                              
-                <li data-tags="Графика"><img src="img/graphic/15.jpg" alt="Illustration" /></li>
-                <li data-tags="Графика"><img src="img/graphic/16.jpg" alt="Illustration" /></li>
-                <li data-tags="Акварель"><img src="img/watercolor/1.jpg" alt="Illustration" /></li>
-                <li data-tags="Акварель"><img src="img/watercolor/2.jpg" alt="Illustration" /></li>
-                <li data-tags="Другое"><img src="img/other/1.jpg" alt="Illustration" /></li>
-                <!-- <li data-tags="Watercolor,Графика"><img src="img/shots/7.jpg" alt="Illustration" /></li> -->
-            </ul>
+            <div id="myBtnContainer">
+              <button class="btn active" onclick="filterSelection('all')"> Все работы</button>
+              <button class="btn" onclick="filterSelection('graphic')"> Графика</button>
+              <button class="btn" onclick="filterSelection('watercolor')"> Акварель</button>
+              <button class="btn" onclick="filterSelection('other')"> Другое</button>
             </div>
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+              <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/graphic/1.jpg" alt="">
+                </div>
+              </div>  
+              <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/graphic/2.jpg" alt="">
+                </div>
+              </div>  
+              <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/graphic/3.jpg" alt="">
+                </div>
+              </div>
+                <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                    <img src="img/graphic/4.jpg" alt="">
+                </div>
+              </div> 
+              <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/graphic/5.jpg" alt="">
+                </div>
+              </div>  
+              <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/graphic/6.jpg" alt="">
+                </div>
+              </div>  
+              <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/graphic/7.jpg" alt="">
+                </div>
+              </div>
+                <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                    <img src="img/graphic/8.jpg" alt="">
+                </div>
+              </div> 
+              <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/graphic/9.jpg" alt="">
+                </div>
+              </div>  
+              <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/graphic/10.jpg" alt="">
+                </div>
+              </div>  
+              <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/graphic/11.jpg" alt="">
+                </div>
+              </div>
+                <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                    <img src="img/graphic/12.jpg" alt="">
+                </div>
+              </div> 
+              <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/graphic/13.jpg" alt="">
+                </div>
+              </div>  
+              <div class="column graphic col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/graphic/14.jpg" alt="">
+                </div>
+              </div>  
+              <div class="column watercolor col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/watercolor/1.jpg" alt="">
+                </div>
+              </div>  
+              <div class="column watercolor col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/watercolor/2.jpg" alt="">
+                </div>
+              </div>  
+               <div class="column other col-sm-6 col-md-3">
+                <div class="content">
+                  <img src="img/other/1.jpg" alt="">
+                </div>
+              </div>  
+            </div>            
         </div>
-        </div> <!--/container-fluid-->
     </div>
     <!-- End #projects -->
 
@@ -182,7 +251,8 @@
     <script src="js/scripts.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script src="js/jquery.quicksand.js"></script>
-    <script src="js/gallery.js"></script>
+    <!-- <script src="js/gallery.js"></script> -->
+    <script src="js/gallery2.js"></script>
 <!-- todo
 1. шрифт кириллический
 2. блок "обо мне"

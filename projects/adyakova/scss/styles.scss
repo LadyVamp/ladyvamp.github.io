@@ -799,33 +799,82 @@ footer {
 -----------------------------*/
 
 
-#container{
-    display:block;
-    overflow:hidden;
-    width: 830px;
-    margin:0 auto;
+//test
+* {
+    box-sizing: border-box;
 }
 
-#container li{
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
     float: left;
-    list-style: none outside none;
-    margin: 6px;
-    position: relative;
-    -moz-box-shadow: 0 0 5px #000;
-    -webkit-box-shadow: 0 0 5px #000;
-    box-shadow: 0 0 5px #000;
+    display: none; /* Hide columns by default */
 }
 
-#container ul{
-    overflow:hidden;
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-#container ul.hidden{
-    display:none;
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
 }
 
-#stage {
-    img {
-        max-height: 150px;
-    }
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+
+.content img{
+   max-height: 200px;
 }
