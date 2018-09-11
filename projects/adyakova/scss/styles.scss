@@ -5,18 +5,21 @@
 */
 
 // Define base and accent colors
-$base-color: #941A0D ;
-$base-color-hover: darken($base-color, 10%);
+//$base-color: #941A0D ;
+$base-color: #ff99cc;
+$base-color-hover: darken($base-color, 20%);
 
 // Define background colors
 $background: #fff;
-$background-alt: #f2f2f5;
+//$background-alt: #f2f2f5;
+$background-alt: #003333;
 
 // Define border colors
 $border: #dcd9d9;
 
 // Define text colors
-$heading: #374054;
+//$heading: #374054;
+$heading: $base-color;
 $text: #74808a;
 
 //Define social colors
@@ -109,7 +112,8 @@ header {
 
     a {
         display: block;
-        color: $base-color;
+        //color: $base-color;
+        color: darken($base-color, 10%);
         padding: 10px;
 
         &:hover {
@@ -336,7 +340,8 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        //color: lighten($base-color, 25%);
+        color: $base-color;
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -351,7 +356,8 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+   //background: rgba($base-color-hover, 0.8);
+   background: rgba(#cc3366, 0.8);
     z-index: 1;
 }
 
@@ -797,28 +803,43 @@ footer {
 /*----------------------------
     Content area
 -----------------------------*/
-
-
-//test
-* {
-    box-sizing: border-box;
+#container{
+    display:block;
+    overflow:hidden;
+    width: 830px;
+    margin:0 auto;
 }
 
-body {
-    background-color: #f1f1f1;
-    padding: 20px;
-    font-family: Arial;
+#container li{
+    float: left;
+    list-style: none outside none;
+    margin: 6px;
+    position: relative;
+    -moz-box-shadow: 0 0 5px #000;
+    -webkit-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
 }
 
+#container ul{
+    overflow:hidden;
+}
+
+#container ul.hidden{
+    display:none;
+}
+
+#stage {
+    img {
+        max-height: 150px;
+    }
+}
+
+
+//-------------test
 /* Center website */
 .main {
     max-width: 1000px;
     margin: auto;
-}
-
-h1 {
-    font-size: 50px;
-    word-break: break-all;
 }
 
 .row {
@@ -830,7 +851,6 @@ h1 {
 .row > .column {
     padding: 8px;
 }
-
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
@@ -844,9 +864,10 @@ h1 {
     clear: both;
 }
 
+
 /* Content */
 .content {
-    background-color: white;
+   // background-color: white; //рамочки
     padding: 10px;
 }
 
@@ -854,6 +875,7 @@ h1 {
 .show {
     display: block;
 }
+
 
 /* Style the buttons */
 .btn {
@@ -868,6 +890,7 @@ h1 {
 .btn:hover {
   background-color: #ddd;
 }
+
 
 /* Add a dark background color to the active button */
 .btn.active {

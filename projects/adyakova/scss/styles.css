@@ -49,15 +49,15 @@ header {
     display: inline-block; }
   header a {
     display: block;
-    color: #941A0D;
+    color: #ff66b3;
     padding: 10px; }
     header a:hover {
-      color: #651209;
+      color: #ff3399;
       text-decoration: none;
       background: #eee;
       border-radius: 4px; }
     header a:focus {
-      color: #941A0D;
+      color: #ff99cc;
       text-decoration: none; }
   header.active {
     display: block; }
@@ -74,7 +74,7 @@ header {
   position: fixed;
   right: 15px;
   top: 10px;
-  color: #941A0D;
+  color: #ff99cc;
   font-size: 1.5em;
   z-index: 20;
   padding: 0 7px;
@@ -90,7 +90,7 @@ header {
   padding-right: 15px;
   padding-top: 10px;
   cursor: pointer;
-  color: #941A0D; }
+  color: #ff99cc; }
   #mobile-menu-close span {
     font-size: 0.5em;
     text-transform: uppercase; }
@@ -150,7 +150,7 @@ footer {
   border-radius: 30px;
   transition: 0.5s ease all; }
   .btn-rounded-white:hover {
-    color: #941A0D;
+    color: #ff99cc;
     background: #fff;
     text-decoration: none; }
 
@@ -175,10 +175,10 @@ footer {
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: #941A0D; }
+    background: #ff99cc; }
 
 .background-alt {
-  background: #f2f2f5; }
+  background: #003333; }
 
 /*
     --------------------------
@@ -212,7 +212,7 @@ footer {
     letter-spacing: 0.05em;
     line-height: 0.9em; }
   #lead-content h2 {
-    color: #ed4533;
+    color: #ff99cc;
     font-weight: 500;
     font-size: 2.25em;
     margin-bottom: 15px; }
@@ -225,7 +225,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(101, 18, 9, 0.8);
+  background: rgba(204, 51, 102, 0.8);
   z-index: 1; }
 
 #lead-down {
@@ -244,7 +244,7 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid #ed4533;
+    border: 3px solid white;
     text-align: center; }
   #lead-down i {
     animation: pulsate 1.5s ease;
@@ -267,7 +267,7 @@ footer {
   padding: 75px 15px;
   border-bottom: 1px solid #dcd9d9; }
   #about h2 {
-    color: #374054; }
+    color: #ff99cc; }
   #about p {
     color: #74808a;
     margin: 0; }
@@ -282,7 +282,7 @@ footer {
   border-bottom: 1px solid #dcd9d9;
   text-align: center; }
   #education h2 {
-    color: #374054;
+    color: #ff99cc;
     margin-bottom: 50px; }
 
 .education-block {
@@ -295,7 +295,7 @@ footer {
     font-weight: 500;
     float: left;
     margin: 0;
-    color: #374054; }
+    color: #ff99cc; }
   .education-block span {
     color: #74808a;
     float: right; }
@@ -321,7 +321,7 @@ footer {
   border-bottom: 1px solid #dcd9d9;
   text-align: center; }
   #projects h2 {
-    color: #374054;
+    color: #ff99cc;
     margin-bottom: 0; }
 
 .project {
@@ -346,7 +346,7 @@ footer {
   .project-info h3 {
     font-size: 1.5em;
     font-weight: 300;
-    color: #374054;
+    color: #ff99cc;
     margin: 0 0 15px 0; }
   .project-info p {
     color: #74808a;
@@ -362,7 +362,7 @@ footer {
   padding: 50px 15px;
   text-align: center; }
   #skills h2 {
-    color: #374054;
+    color: #ff99cc;
     margin-bottom: 50px; }
   #skills ul {
     display: block;
@@ -373,8 +373,8 @@ footer {
     display: inline-block;
     margin: 7px;
     padding: 5px 10px;
-    color: #374054;
-    background: #e4e4ea;
+    color: #ff99cc;
+    background: #001a1a;
     list-style: none;
     cursor: default;
     font-size: 1.2em; }
@@ -536,22 +536,34 @@ footer {
 /*----------------------------
     Content area
 -----------------------------*/
-* {
-  box-sizing: border-box; }
+#container {
+  display: block;
+  overflow: hidden;
+  width: 830px;
+  margin: 0 auto; }
 
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial; }
+#container li {
+  float: left;
+  list-style: none outside none;
+  margin: 6px;
+  position: relative;
+  -moz-box-shadow: 0 0 5px #000;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000; }
+
+#container ul {
+  overflow: hidden; }
+
+#container ul.hidden {
+  display: none; }
+
+#stage img {
+  max-height: 150px; }
 
 /* Center website */
 .main {
   max-width: 1000px;
   margin: auto; }
-
-h1 {
-  font-size: 50px;
-  word-break: break-all; }
 
 .row {
   margin: 8px -16px; }
@@ -575,7 +587,6 @@ h1 {
 
 /* Content */
 .content {
-  background-color: white;
   padding: 10px; }
 
 /* The "show" class is added to the filtered elements */
