@@ -44,24 +44,25 @@ body {
   text-decoration: none;
 }
 .archive17__price1 h3,
-.countdown18__prices1 h3 {
+.countdown__prices1 h3 {
   color: #70bcde;
 }
 .archive17__price2 h3,
-.countdown18__prices2 h3 {
+.countdown__prices2 h3 {
   color: #218c74;
 }
 .archive17__price3 h3,
-.countdown18__prices3 h3 {
+.countdown__prices3 h3 {
   color: #ffb142;
 }
 .archive17__price4 h3,
-.countdown18__prices4 h3 {
+.countdown__prices4 h3 {
   color: #662020;
 }
 h2 {
   color: #227093;
 }
+.archive18__btn .btn-link,
 .archive17__btn .btn-link,
 .archive16__btn .btn-link {
   color: #ffb142;
