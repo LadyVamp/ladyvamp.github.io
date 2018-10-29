@@ -48,7 +48,7 @@ $(function () {
 
         }
         else if ($('#datepicker').val() == "") {
-            console.log('Выберите начальную дату!');
+            console.log('Выберите исходную дату!');
             // setFocus('datepicker');
         }
     });
@@ -71,7 +71,7 @@ $(function () {
         }
 
         else if ($('#datepicker2').val() == "") {
-            console.log('Выберите начальную дату!!');
+            console.log('Выберите исходную дату!!');
         }
     });
 });
@@ -87,7 +87,7 @@ $(function () {
         else if (($('#datepicker3').val() != "") && ($('#datepicker4').val() != "")) {
             var startDate = $.datepicker.parseDate('mm/dd/yy', $('#datepicker3').val());
             var finishDate = $.datepicker.parseDate('mm/dd/yy', $('#datepicker4').val());
-            result = finishDate.getDate() - startDate.getDate();
+            result = (finishDate - startDate)/86400000;
             $('#resultCount').val(result);
 
         }
