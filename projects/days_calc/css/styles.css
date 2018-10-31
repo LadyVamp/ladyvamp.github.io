@@ -2,12 +2,10 @@ body {
 	text-align: center;
 	background: url(../img/Shakhe_River.jpg); 
 	background-size: cover; 
-	/* color: #000; */
 	color: #fff;
   }
   
   h1, a:hover {
-	/* color: #f0ad4e; */
   color: #1B1BB3;
   }
   
@@ -17,7 +15,6 @@ body {
 
   a {
 	text-decoration: none;
-  /* color: #1B1BB3; */
 	color: #f0ad4e;  
 	font-size: 14px;
   }
@@ -33,7 +30,7 @@ body {
   }
   
   .amount {
-	width: 50px;
+	width: 75px;
   }
 
   .result {
@@ -55,7 +52,6 @@ body {
 
 
   footer {
-	/* color: #ecf0f1; */
   color: #000;
   background-color: rgba(0, 0, 0, 0.45);  
   }
