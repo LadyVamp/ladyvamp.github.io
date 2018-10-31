@@ -18,11 +18,6 @@ var options = { //для форматирования result
     timezone: 'UTC'
 };
 
-// function setFocus(dp) {
-//     document.getElementById(dp).focus();
-// }
-
-
 $(document).ready(function () {//инициализация datepicker'ов при загрузке страницы
     $('#datepicker').datepicker();
     $('#datepicker2').datepicker();
@@ -38,18 +33,16 @@ $(function () {
             var amount = parseInt($('#numOfDays').val());
             var result = $.datepicker.parseDate('mm/dd/yy', $('#datepicker').val());
             result.setDate(result.getDate() + amount);
-            // $('#resultDate').val(result.toLocaleString("ru", options)); //четверг, 25 октября 2018 г.
+            $('#resultDate').val(result.toLocaleString("ru", options));
 
-            //форматирование начальной даты, раньше нельзя: Uncaught Unexpected literal at position 2
-            // var startDateCopy = $("#datepicker").val(); //скопировали 10/24/2018
-            // $('#datepicker').val(startDateCopy.replace(/^(\d{2}).(\d{2}).(\d{4})/, '$2.$1.$3')); //24.10.2018
-
-            $('#resultDate').val(result.toLocaleString("ru", options)); //четверг, 25 октября 2018 г.
+            //форматирование исходной даты и вывод в консоль
+            var startDateCopy = $("#datepicker").val(); //скопировали 10/24/2018
+            startDateforConsole = startDateCopy.replace(/^(\d{2}).(\d{2}).(\d{4})/, '$2.$1.$3')
+            console.log(startDateforConsole + ' + ' + amount + ' = ' + result.toLocaleString("ru", options));
 
         }
         else if ($('#datepicker').val() == "") {
             console.log('Выберите исходную дату!');
-            // setFocus('datepicker');
         }
     });
 });
@@ -62,11 +55,12 @@ $(function () {
             var amount = parseInt($('#numOfDays2').val());
             var result = $.datepicker.parseDate('mm/dd/yy', $('#datepicker2').val());
             result.setDate(result.getDate() - amount);
-            //форматирование начальной даты, раньше нельзя: Uncaught Unexpected literal at position 2
-            // var startDateCopy = $("#datepicker").val(); //скопировали 10/24/2018
-            // $('#datepicker').val(startDateCopy.replace(/^(\d{2}).(\d{2}).(\d{4})/, '$2.$1.$3')); //24.10.2018
-
             $('#resultDate2').val(result.toLocaleString("ru", options)); //четверг, 25 октября 2018 г.
+
+            //форматирование исходной даты и вывод в консоль
+            var startDateCopy = $("#datepicker2").val();
+            startDateforConsole = startDateCopy.replace(/^(\d{2}).(\d{2}).(\d{4})/, '$2.$1.$3')
+            console.log(startDateforConsole + ' + ' + amount + ' = ' + result.toLocaleString("ru", options));
 
         }
 
@@ -85,11 +79,15 @@ $(function () {
         }
 
         else if (($('#datepicker3').val() != "") && ($('#datepicker4').val() != "")) {
-            var startDate = $.datepicker.parseDate('mm/dd/yy', $('#datepicker3').val());
-            var finishDate = $.datepicker.parseDate('mm/dd/yy', $('#datepicker4').val());
-            result = (finishDate - startDate)/86400000;
+            var date1 = $.datepicker.parseDate('mm/dd/yy', $('#datepicker3').val());
+            var date2 = $.datepicker.parseDate('mm/dd/yy', $('#datepicker4').val());
+            result = (date2 - date1) / 86400000;
             $('#resultCount').val(result);
 
+            //форматирование и вывод в консоль
+            date1ForConsole = $("#datepicker3").val().replace(/^(\d{2}).(\d{2}).(\d{4})/, '$2.$1.$3');
+            date2ForConsole = $("#datepicker4").val().replace(/^(\d{2}).(\d{2}).(\d{4})/, '$2.$1.$3');
+            console.log('date1: ' + date1ForConsole + ', date2: ' + date2ForConsole + ', result: ' + result);
         }
 
     });
