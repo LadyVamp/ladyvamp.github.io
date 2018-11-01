@@ -41,9 +41,6 @@ $(function () {
             console.log(startDateforConsole + ' + ' + amount + ' = ' + result.toLocaleString("ru", options));
 
         }
-        else if ($('#datepicker').val() == "") {
-            console.log('Выберите исходную дату!');
-        }
     });
 });
 
@@ -63,10 +60,6 @@ $(function () {
             console.log(startDateforConsole + ' + ' + amount + ' = ' + result.toLocaleString("ru", options));
 
         }
-
-        else if ($('#datepicker2').val() == "") {
-            console.log('Выберите исходную дату!!');
-        }
     });
 });
 
@@ -81,7 +74,7 @@ $(function () {
         else if (($('#datepicker3').val() != "") && ($('#datepicker4').val() != "")) {
             var date1 = $.datepicker.parseDate('mm/dd/yy', $('#datepicker3').val());
             var date2 = $.datepicker.parseDate('mm/dd/yy', $('#datepicker4').val());
-            result = (date2 - date1) / 86400000;
+            result = Math.abs((date2 - date1) / 86400000);
             $('#resultCount').val(result);
 
             //форматирование и вывод в консоль
