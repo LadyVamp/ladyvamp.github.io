@@ -37,7 +37,7 @@ $(function () {
 
             //форматирование исходной даты и вывод в консоль
             var startDateCopy = $("#datepicker").val(); //скопировали 10/24/2018
-            startDateforConsole = startDateCopy.replace(/^(\d{2}).(\d{2}).(\d{4})/, '$2.$1.$3')
+            startDateforConsole = startDateCopy.replace(/^(\d{2}).(\d{2}).(\d{4})/, '$2.$1.$3');
             console.log(startDateforConsole + ' + ' + amount + ' = ' + result.toLocaleString("ru", options));
 
         }
@@ -47,7 +47,6 @@ $(function () {
 //Отнять количество дней
 $(function () {
     $(".subtractDays").on("click", function () {
-
         if ($('#datepicker2').val() != "") {
             var amount = parseInt($('#numOfDays2').val());
             var result = $.datepicker.parseDate('mm/dd/yy', $('#datepicker2').val());
@@ -56,7 +55,7 @@ $(function () {
 
             //форматирование исходной даты и вывод в консоль
             var startDateCopy = $("#datepicker2").val();
-            startDateforConsole = startDateCopy.replace(/^(\d{2}).(\d{2}).(\d{4})/, '$2.$1.$3')
+            startDateforConsole = startDateCopy.replace(/^(\d{2}).(\d{2}).(\d{4})/, '$2.$1.$3');
             console.log(startDateforConsole + ' + ' + amount + ' = ' + result.toLocaleString("ru", options));
 
         }
@@ -66,7 +65,6 @@ $(function () {
 //Кол-во дней между датами
 $(function () {
     $(".countDays").on("click", function () {
-
         if (($('#datepicker3').val() == "") || ($('#datepicker4').val() == "")) {
             console.log('Даты не выбраны');
         }
