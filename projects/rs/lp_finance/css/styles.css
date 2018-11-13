@@ -1,0 +1,131 @@
+/*pallete: https://coolors.co/0000a0-3c3744-3d52d5-b4c5e4-fbfff1*/
+/*https://colorscheme.ru/#3-61T--mXw0w0*/
+body {
+    background: aliceblue; 
+    /* font-family: 'Roboto', sans-serif !important; */
+}
+
+h1 {
+    color: #000080;
+}
+h2 {
+    color: #181860;
+}
+h3, h4 {
+    color: #000053;
+}
+/*images*/
+figure {
+    text-align: center;
+}
+
+.img-right {
+    float: right; /* Обтекание картинки по левому краю */
+    padding-left: 10px;
+    padding-bottom: 10px; 
+}
+.img-left {
+    float: left; /* Обтекание картинки по правому краю */
+    padding-right: 10px; 
+    padding-bottom: 10px; 
+}
+
+.h100 {
+    height: 100px;
+}
+
+.h200 {
+    height: 200px;
+}
+
+.navbar-brand img{
+    margin-right: 5px;
+    width: 30px;
+    right: 30px;
+}
+/*index*/
+.index__banner {
+    background: url(../img/index_banner.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/*page1*/
+.debit__banner {
+    background: url(../img/debit_banner.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+.debit__intro {
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+/*page2*/
+.choosedebit__banner {
+    background: url(../img/choosedebit_banner.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*page3*/
+.sortdebit__banner {
+    background: url(../img/sortdebit_banner.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/*page4*/
+.chip__banner {
+    background: url(../img/chip_banner.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+.chip__intro {
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+/*page5*/
+.pin__banner {
+    background: url(../img/pin_banner.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/*page6*/
+.credit__banner {
+    background: url(../img/credit_banner.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+/*page7*/
+.deposit__banner {
+    background: url(../img/deposit_banner.jpg) no-repeat center center fixed;
+    background-size: cover;;
+}
+/*page8*/
+.mobile__banner {
+    background: url(../img/mobile_banner.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*footer*/
+footer {
+margin-bottom: 50px;
+}
+
+footer h1 {
+    color: #B78900;
+    font-size: 20px;
+}
+
+.btn {
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25), 0 4px 10px rgba(0,0,0,0.22);
+    margin-bottom: 8px;
+}
+
+.footer__form {
+    border: 2px dashed #B78900;
+    padding: 5px 10px;
+}
+
+
