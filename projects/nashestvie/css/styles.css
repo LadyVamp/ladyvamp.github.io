@@ -4,6 +4,7 @@ body {
   background: #222222 url('../img/new-bg.gif') repeat;
   /*было bg.gif*/
   color: #fff;
+  text-align: center;
   -moz-text-shadow: 0 -1px 0 #000000;
   -webkit-text-shadow: 0 -1px 0 #000000;
   text-shadow: 0 -1px 0 #000000;
@@ -20,7 +21,6 @@ body {
   background: url('../img/bg-gradient.png') no-repeat center;
 }
 .container {
-  text-align: center;
   margin: 0 auto;
   width: 800px;
   position: absolute;
@@ -68,9 +68,7 @@ h2 {
   color: #ffb142;
   font-size: 30px;
 }
-.center_img img {
-  width: 600px;
-}
+
 .archive17__map img {
   width: 500px;
 }
@@ -79,13 +77,14 @@ h2 {
   margin: 20px 0;
 }
 .countdown18__schedule img {
-  width: 80%;
+  max-width: 375px;
   margin: 20px 0;
+  padding: 0 20px;
 }
 #CDT {
   font-size: 60px;
   color: #eee;
-  margin: 70px 0 100px;
+  margin: 30px 0 50px;
   font-weight: bold;
 }
 #CDT .number-wrapper {
@@ -183,29 +182,60 @@ footer a {
 footer a:hover {
   color: #cf8803;
 }
-/* Small Devices, Phones */
-@media only screen and (max-width: 370px) {
+
+/* Extra small devices Phones (<768px) */
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
   .center_img img,
   .archive17__map img,
   .countdown18__map img {
     max-width: 300px;
   }
   #CDT {
-    font-size: 30px;
+    font-size: 25px;
+    margin: 30px 0 50px;
   }
-}
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  .center_img img,
-  .archive17__map img,
-  .countdown18__map img {
-    max-width: 375px;
-  }
-  #CDT {
-    font-size: 40px;
+  .caption {
+    font-size: 1rem;
   }
   .table {
     width: 50%;
     margin-left: 200px;
   }
+  footer, footer a {
+    font-size: 1rem;
+   }
 }
+
+/* Small devices Tablets (≥768px) */
+@media only screen and (min-width: 361px) and (max-width:768px){
+  .center_img img,
+  .archive17__map img,
+  .countdown18__map img {
+    max-width: 600px;
+  }
+  #CDT {
+    font-size: 40px;
+    width: 100%;
+    margin: 30px 0 50px;
+  }
+  .caption {
+    font-size: 1.2rem;
+  }
+  .table {
+    width: 50%;
+    margin-left: 200px;
+  }
+  footer, footer a {
+    font-size: 1.5rem;
+   }
+}
+
