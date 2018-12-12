@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dialer for risks</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main_new.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="./js/bootstrap.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/jquery-ui.js" charset="utf-8"></script>
+
+   
+</head>
+                   
+<body>
+
+<div class="result-data">
+                
+                </div>  
+    <header class="container">
+  
+        <div class="row header">
+     
+            <div class="col-lg-4 col-md-5 col-sm-5 FIO">
+                <span>ФИО оператора</span>
+            </div>
+            <div class="col-lg-4 col-md-2 col-sm-2 admin">
+                <button onclick="location.href = './admin/index.php'" id="btn_enter_to_adminpanel" class="btn btn_admin adminHref">Архив</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 header__buttons">
+                <button id="btn_connect_to_server" class="btn btn_server">Connect</button>
+                <button id="btn_disconnect_from_server" class="btn btn_server">Disconnect</button>
+                <button id="btn_exit" class="btn btn_server">Выход</button>
+            </div>
+        </div>
+
+         
+    </header>
+
+   
+
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-6 left">
+                <div class="row dashboard">
+                        <div class="col-lg-5 col-md-5 dashboard__indicator indicatorBlock">
+                            <span class="connect_indicator">Ожидаем начало работы...</span> <br>
+                        </div>
+                        <div class="col-lg-2 col-md-2 dashboard__indicator indicatorBlock">
+                            <span class="connect_time">00:00</span>
+                        </div>
+
+                         <div class="col-lg-4 col-md-4 dashboard__selectPhone">
+                         Номер телефона:
+                        <select name="phone" id="PhoneList" disabled data-phones='<?php print $_SESSION['phones'] ?>'>
+                            <option value="all" class="primaryPhone">5555555</option>
+                        </select>
+                        </div>                  
+                </div>
+                <!--/dashboard-->
+
+                <div class="tel-container">
+                    <div class="tel-body">
+                        <div class="col">
+                            <div class="tel-button-row">
+                            <div class="col">
+                                <div class="tel-screen">
+                                    <div class="tel-typed"></div>
+                                    <div class="cross">&larr;</div>
+                                </div>
+                            </div>
+                                <div class="col"></div>
+                                <div class="button" id="7">7</div>
+                                <div class="button" id="8">8</div>
+                                <div class="button" id="9">9</div>
+                               
+                            </div>
+                            <div class="button callBtn_big" id="call"><i class="fas fa-phone"></i></div>
+                            <div class="tel-button-row">
+                                <div class="button" id="4">4</div>
+                                <div class="button" id="5">5</div>
+                                <div class="button" id="6">6</div>
+                            </div>
+                            <div class="tel-button-row">
+                                <div class="button" id="1">1</div>
+                                <div class="button" id="2">2</div>
+                                <div class="button" id="3">3</div>
+                            </div>
+                            <div class="tel-button-row">
+                                <div class="button callBtn" id="call"><i class="fas fa-phone"></i></div>
+                                <div class="button" id="0">0</div>
+                                <div class="button" id='C'>C</div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!--/tel-body-->
+                </div>
+                <!--/tel-container-->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="callList">
+                        <div class="card">
+                            <div class="card-header" id="callListH">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#callListC" aria-expanded="true" aria-controls="callListC">
+                                    Список обзвона
+                                </button>
+                            </h5>
+                            </div>
+
+                            <div id="callListC" class="collapse show" aria-labelledby="callListH" data-parent="#callList">
+                                <div class="card-body">
+                                    <div class="callList">
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                        <p id="idclient">12.00 Иванов Александр Александрович  +79991234567  <i class="fas fa-phone"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!--/card-->
+                    </div><!--/#callList-->
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-6 col-md-12 right">
+                <div class="row accordeon">
+
+                 <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Системный отчет
+                            </button>
+                        </h5>
+                        </div>
+                      
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">   
+                        <button id="btn_clear_console" class="chadowOff"><img src="./img/basket.png" alt="clear" title="Очистить"></button>
+                        <div class="card-body">
+                            <textarea name="console" id="consoleBlock" readonly="">
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+    10.12.2018 15:16:17 5552339 &rarr; +79265742116    
+
+                            </textarea>  
+                        </div>
+                        </div>
+                       
+                       
+
+                        
+                    </div> <!--/card-->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                История коммуникации
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <textarea name="console" id="commHistory" readonly="">
+                                        
+                            </textarea>
+                        </div>
+                        </div>
+                    </div><!--/card-->
+                    
+                 </div><!--/#accordion-->
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    
+    <script src='./js/main.js'></script>
+    <script type="text/javascript" src="./js/login.js"></script>
+
+</body>
+</html>
