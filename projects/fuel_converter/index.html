@@ -1,94 +1,112 @@
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="js/jquery-2.2.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet">
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<title>Fuel consumption calculator</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131051815-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-<script language="javascript">
-    function convert() {
-        var distance=document.getElementById('distance').value; // получаем данные из формы, расстояние
-        var consumption100=document.getElementById('consumption100').value; // расход на 100 км
-        var price=document.getElementById('price').value; // цена 1 литра
-        var resConsumption = parseFloat((distance/100)*consumption100);
-        var resPrice = parseFloat(resConsumption*price);
+        gtag('config', 'UA-131051815-1');
+    </script>
 
-        document.getElementById('out1').innerHTML =  "Количество потраченного топлива: " + resConsumption.toFixed(2) + " л";
-        document.getElementById('out2').innerHTML =  "Стоимость: " + resPrice.toFixed(2) + " рублей";        
-        document.getElementById('out3').innerHTML =  "Количество потраченного топлива: " + 2*resConsumption.toFixed(2) + " л";
-        document.getElementById('out4').innerHTML =  "Стоимость: " + 2*resPrice.toFixed(2) + " рублей";
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Fuel consumption calculator</title>
 
-        // console.log(resConsumption);
-        // console.log(resPrice);
-}
-</script>
+    <script language="javascript">
+        function convert() {
+            var distance = document.getElementById('distance').value; // получаем данные из формы, расстояние
+            var consumption100 = document.getElementById('consumption100').value; // расход на 100 км
+            var price = document.getElementById('price').value; // цена 1 литра
+            var resConsumption = parseFloat((distance / 100) * consumption100);
+            var resPrice = parseFloat(resConsumption * price);
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter47196204 = new Ya.Metrika({
-                    id:47196204,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
+            document.getElementById('out1').innerHTML = "Количество потраченного топлива: " + resConsumption.toFixed(2) + " л";
+            document.getElementById('out2').innerHTML = "Стоимость: " + resPrice.toFixed(2) + " рублей";
+            document.getElementById('out3').innerHTML = "Количество потраченного топлива: " + 2 * resConsumption.toFixed(2) + " л";
+            document.getElementById('out4').innerHTML = "Стоимость: " + 2 * resPrice.toFixed(2) + " рублей";
 
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
+            // console.log(resConsumption);
+            // console.log(resPrice);
+        }
+    </script>
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/47196204" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter47196204 = new Ya.Metrika({
+                        id: 47196204,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
+                    });
+                } catch (e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/47196204" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 
 </head>
 
 <body>
     <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-offset-2">
-            <header>
-                <h1>Калькулятор расхода топлива</h1>
-            </header>
-             <form name="enter">
-                <h4>Расстояние, км</h4>
-                <input id="distance" type="text" class="colortext" value="700" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  <= 57)? true : event.keyCode == 46"> <br> <!--числа от 0 до 9 и точка-->
-                <h4>Расход топлива на 100 км</h4>
-                <input id="consumption100" type="text" class="colortext" value="8" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  <= 57)? true : event.keyCode == 46" title="В случае дробного числа использовать точку"> <br>
-                <h4>Стоимость 1 литра топлива, руб.</h4>
-                <input id="price" type="text" class="colortext" value="40" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  <= 57)? true : event.keyCode == 46"> <br>
-            </form>
-            <button type="button" class="btn btn-warning" onclick="convert()">Рассчитать</button>
-            <div class="out">
-                <p>В одну сторону</p>
-                <div id="out1"></div>
-                <div id="out2"></div>  
-                <br/>
-                <p>Туда-обратно</p>
-                <div id="out3"></div>
-                <div id="out4"></div>
+        <div class="row">
+            <div class="col-sm-8 col-md-offset-2">
+                <header>
+                    <h1>Калькулятор расхода топлива</h1>
+                </header>
+                <form name="enter">
+                    <h4>Расстояние, км</h4>
+                    <input id="distance" type="text" class="colortext" value="700" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  <= 57)? true : event.keyCode == 46">
+                    <br>
+                    <!--числа от 0 до 9 и точка-->
+                    <h4>Расход топлива на 100 км</h4>
+                    <input id="consumption100" type="text" class="colortext" value="8" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  <= 57)? true : event.keyCode == 46"
+                        title="В случае дробного числа использовать точку"> <br>
+                    <h4>Стоимость 1 литра топлива, руб.</h4>
+                    <input id="price" type="text" class="colortext" value="40" onkeypress="event.returnValue=(event.keyCode >= 48) && (event.keyCode  <= 57)? true : event.keyCode == 46">
+                    <br>
+                </form>
+                <button type="button" class="btn btn-warning" onclick="convert()">Рассчитать</button>
+                <div class="out">
+                    <p>В одну сторону</p>
+                    <div id="out1"></div>
+                    <div id="out2"></div>
+                    <br />
+                    <p>Туда-обратно</p>
+                    <div id="out3"></div>
+                    <div id="out4"></div>
+                </div>
             </div>
         </div>
-      </div>
-    <footer>
-        Copyright &copy; 2017  <a href="../../index.html" target="_blank" title="Перейти на страницу портфолио">Nadezhda Dyakova aka LadyVamp</a><br>
-    </footer>
+        <footer>
+            Copyright &copy; 2017 <a href="../../index.html" target="_blank" title="Перейти на страницу портфолио">Nadezhda
+                Dyakova aka LadyVamp</a><br>
+        </footer>
 
-</div>
+    </div>
 </body>
