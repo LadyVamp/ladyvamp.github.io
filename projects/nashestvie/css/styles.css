@@ -2,7 +2,6 @@
 /* Variables */
 body {
   background: #222222 url('../img/new-bg.gif') repeat;
-  /*было bg.gif*/
   color: #fff;
   text-align: center;
   -moz-text-shadow: 0 -1px 0 #000000;
@@ -43,6 +42,15 @@ body {
 .countdown18__prices a {
   text-decoration: none;
 }
+.countdown17__prices, .countdown18__prices {
+  font-size: 13px;
+}
+.countdown17__prices h3, .countdown18__prices h3 {
+  font-size: 18px;
+}
+.countdown17__prices h4, .countdown18__prices h4 {
+  font-size: 16px;
+}
 .archive17__price1 h3,
 .countdown__prices1 h3 {
   color: #70bcde;
@@ -60,7 +68,20 @@ body {
   color: #662020;
 }
 h2 {
+  font-size: 20px;
   color: #227093;
+}
+h5 {
+  font-size: 20px;
+  color: #C18349;
+}
+.btn-link{
+  color: #B19453;
+  font-size: 25px;
+}
+.btn-link:hover{
+  color: #ffb142;
+  text-decoration: none;
 }
 .archive18__btn .btn-link,
 .archive17__btn .btn-link,
@@ -154,7 +175,7 @@ h2 {
   width: 100%;
   color: #777;
 }
-#tooltip {
+/* #tooltip {
   width: 200px;
   position: absolute;
   z-index: 1;
@@ -171,7 +192,7 @@ h2 {
 .tooltiper a {
   text-decoration: none;
   color: #ffff66;
-}
+} */
 footer p {
   color: #ffffff;
 }
