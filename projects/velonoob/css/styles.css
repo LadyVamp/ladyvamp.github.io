@@ -58,7 +58,11 @@ h3 {
 }
 
 .link {
-  color: #518DB4;
+  /* color: #518DB4; */
+  color: #669ABC;
+}
+.link:hover {
+  color: #D1A834;
 }
 
 #CDT {
@@ -136,7 +140,8 @@ h3 {
   font-weight: 400;
 }
 .header img {
-  width: 100%;
+  /* width: 100%; */
+  width: 550px;
 }
 
 footer {
