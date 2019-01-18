@@ -101,6 +101,9 @@ body {
         }
     }
 }
+.logo {
+    width: 50px;
+}
 
 @keyframes dropHeader {
   0% {
@@ -621,14 +624,19 @@ footer {
     border-radius: 4px;
 }
 
+.design {
+    height: 230px;
+}
+
 .project-image {
     float: left;
     img {
-        height: 300px !important;
+        height: 195px;
     }
 }
-
-
+.design .project-image img {
+    height: 215px;
+}
 .project-info {
     position: absolute;
     top: 50%;
@@ -749,6 +757,15 @@ footer {
         }
     }
 }
+
+.github a:hover {
+    color: #000;
+}
+
+.vk a:hover {
+    color: #5E81A8;
+}
+
 
 /*
     ----------------------------
