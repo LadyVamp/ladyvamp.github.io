@@ -29,30 +29,56 @@ function generate(len, dic) {
 //Расчет
 $(function () {
     $(".calculate").on("click", function () { //при нажатии на кнопку
-        var consumption = parseInt($('.consumption').val()); 
-        var power = parseInt($('.power').val()); 
-        var member = parseInt($('.member').val()); 
-        var day = parseInt($('.day').val()); 
-        var dinner = parseInt($('.dinner').val()); 
+        var consumption = parseInt($('.consumption').val()); //Расход газа горелки заявленный, г/час
+        var power = parseInt($('.power').val());             //Мощность горелки заявленная, Вт
+        var person = parseInt($('.person').val());           //Кол-во участников 
+        var day = parseInt($('.day').val());                 //Кол-во дней
+        var dinner = parseInt($('.dinner').val());           //Кол-во приемов пищи в день
 
         console.log('consumption = ', consumption);
         console.log('power = ', power);
-        console.log('member = ', member);
+        console.log('person = ', person);
         console.log('day = ', day);
         console.log('dinner = ', dinner);
 
         var result = 0;
         //грамм на человека
-        // gmember = consumption/15; //    BRS 3000t: 140/15 = 9.3
+        // gperson = consumption/15; //    BRS 3000t: 140/15 = 9.3
                                     //Quick Track 185/25 = 7.4
         //todo select с известными значениями горелок. switch-case и подставлять константы
         //мощность / расход газа
-        powercons = power/consumption;
-        console.log('powercons = ', powercons);
-        result = (member * dinner * day * powercons).toFixed(2);
-        // result = (member * dinner * day * gmember).toFixed(2); //для brs и quick track
+        powcons = power/consumption;
+        console.log('power/consumption = ', powcons);
+        result = (person * dinner * day * powcons).toFixed(2);
+        // result = (person * dinner * day * gperson).toFixed(2); //для brs и quick track
         console.log('result = ', result);
         $('#result').val(result);
+
+
+    });
+});
+
+
+
+//Расчет с известной горелкой
+$(function () {
+    $(".calculateBurner").on("click", function () { //при нажатии на кнопку
+        // var consumption = parseInt($('.consumption').val()); //Расход газа горелки заявленный, г/час
+        // var power = parseInt($('.power').val());             //Мощность горелки заявленная, Вт
+        var person = parseInt($('.person').val());           //Кол-во участников 
+        var day = parseInt($('.day').val());                 //Кол-во дней
+        var dinner = parseInt($('.dinner').val());           //Кол-во приемов пищи в день
+        var burner = document.getElementById("selectBurner"); //Расход газа на человека в день, если известна модель горелки
+        var consumptionPersonDay = burner.value;
+        console.log('consumptionPersonDay = ', consumptionPersonDay);
+        console.log('person = ', person);
+        console.log('day = ', day);
+        console.log('dinner = ', dinner);
+
+        var resultBurner = 0;
+        resultBurner = (person * dinner * day * consumptionPersonDay).toFixed(2);
+        console.log('resultBurner = ', resultBurner);
+        $('#resultBurner').val(resultBurner);
 
 
     });
