@@ -2,14 +2,17 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!--clipboard: копирование в буфер обмена-->
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
@@ -22,147 +25,134 @@
 
 <body>
     <div class="container" id="noise">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-md-auto col-xs-12">
-                <header>
-                    <h1>Gas consumption</h1>
-                </header>
+        <header>
+            <h1>Калькулятор расхода газа</h1>
+        </header>
 
-                <!-- <div>
-                    <div>
-                        <input type="radio" id="digit" name="radio" value="digit" checked>
-                        <label for="digit" class="col-form-label">Цифры</label><br>
-                        <input type="radio" id="upperCase" name="radio" value="upperCase">
-                        <label for="upperCase" class="col-form-label">Прописные буквы</label><br>
-                        <input type="radio" id="lowerCase" name="radio" value="lowerCase">
-                        <label for="lowerCase" class="col-form-label">Строчные буквы</label><br>
-                        <input type="radio" id="all" name="radio" value="all">
-                        <label for="all" class="col-form-label">Цифры, строчные и прописные буквы</label><br>
-                        <input type="radio" id="allAndSpec" name="radio" value="allAndSpec">
-                        <label for="allAndSpec" class="col-form-label">Цифры, буквы, <span title="спецсимволы: !@#$%^&*">спецсимволы <sup>&#9763;</sup></span></label>
-                    </div>
-                    <label class="col-form-label">Длина пароля:</label> <input autofocus id="len" onkeypress='validate(event)'
-                        min="6" maxn="100" value="8" class="len"><br />
-                    <button type="button" class="btn btn-primary generator">Создать пароль</button>
-                    <br>
-                    <label class="col-form-label">Результат:</label> <input id="result"><br />
-                    <button type="button" data-clipboard-target="#result" class="btn btn-info btn-clipboard">Скопировать
-                        в буфер обмена</button>
-                </div> -->
-
-                <!-- на входе
+        <!-- на входе
                     расход газа горелки (select модель горелки, популярные модели?)
                     кол-во участников
                     кол-во дней похода
                     кол-во приемов пищи в день (1,2,3) (завтрак, завтрак+ужин, завтрак+обед+ужин)
                 на выходе
-                    масса потраченного газа -->
+                    масса потраченного газа  -->
 
-                <!-- TODO:
+        <!-- TODO:
                         favicon
                         select brs, quick track 
                     -->
+        <div class="row">
+            <!-- <h2>Исходные данные</h2> -->
+            <form>
+                <div class="form-group">
+                    <label class="col-form-label">Кол-во участников:</label> <input type="number"
+                        onkeypress='validate(event)' min="1" max="99" value="2" class="person">
+                </div>
+                <div class="form-group"> <label class="col-form-label">Кол-во дней похода:</label> <input type="number"
+                        onkeypress='validate(event)' min="1" max="99" value="7" class="day"></div>
+                <div class="form-group">
+                    <label class="col-form-label">Кол-во готовок на горелке в день:</label> <input type="number"
+                        onkeypress='validate(event)' min="1" max="3" value="2" class="dinner"><br />
+                </div>
+            </form>
+        </div>
 
-                <h2>Выберите горелку</h2>
-                <!-- спойлер с пояснением -->
 
-
+        <br />
+        <div class="row">
+            <div class="col-md-5">
+                <h3>Выберите горелку</h3>
                 <div class="selector">
                     <select id="selectBurner">
-                        <option value="25">Quick Track</option>
                         <option value="15">BRS 3000t</option>
+                        <option value="25">Quick Track</option>
                     </select>
                 </div>
                 <br />
                 <button type="button" class="btn btn-primary calculateBurner">Посчитать</button>
                 <br>
                 <label class="col-form-label">Результат, г:</label> <input id="resultBurner" class="result"><br />
+                <label class="col-form-label">Баллонов, шт (1 баллон 450 г):</label> <input id="resultBurnerBallon"
+                    class="result"><br />
+            </div>
 
-                <h2>или введите параметры горелки вручную</h2>
-                <div>
-                    <div>
-                        <label class="col-form-label">Расход газа горелки заявленный, г/час:</label> <input type="number"
-                            autofocus onkeypress='validate(event)' min="0" max="500" value="140" class="consumption"><br />
-                        <label class="col-form-label">Мощность горелки заявленная, Вт:</label> <input type="number"
-                            onkeypress='validate(event)' min="100" max="10000" value="2700" class="power"><br />
-                        <label class="col-form-label">Кол-во участников:</label> <input type="number" onkeypress='validate(event)'
-                            min="1" max="99" value="2" class="person"><br />
-                        <label class="col-form-label">Кол-во дней похода:</label> <input type="number" onkeypress='validate(event)'
-                            min="1" max="99" value="5" class="day"><br />
-                        <label class="col-form-label">Кол-во приемов пищи в день:</label> <input type="number"
-                            onkeypress='validate(event)' min="1" max="3" value="3" class="dinner"><br />
+            <div class="col-md-7">
+                <h3>или введите параметры горелки вручную</h3>
+                <label class="col-form-label">Расход газа горелки заявленный, г/час:</label> <input type="number"
+                    autofocus onkeypress='validate(event)' min="0" max="500" value="140" class="consumption"><br />
+                <label class="col-form-label">Мощность горелки заявленная, Вт:</label> <input type="number"
+                    onkeypress='validate(event)' min="100" max="10000" value="2700" class="power"><br />
 
-
-                        <button type="button" class="btn btn-primary calculate">Посчитать</button>
-                        <br>
-                        <label class="col-form-label">Результат, г:</label> <input id="result" class="result"><br />
-
-                    </div>
-                    <br />
-
-                    <!-- <div class="col col-lg-2"></div> -->
-
-                </div>
+                <button type="button" class="btn btn-primary calculate">Посчитать</button>
+                <br>
+                <label class="col-form-label">Результат, г:</label> <input id="result" class="result"><br />
+                <label class="col-form-label">Баллонов, шт (1 баллон 450 г):</label> <input id="resultBallon"
+                    class="result"><br />
             </div>
         </div>
 
         <div class="spoiler">
             <p>
                 <a class="btn btn-spoiler" data-toggle="collapse" href="#hint" role="button" aria-expanded="false"
-                    aria-controls="hint">Таблица с моделями горелок</a>
+                    aria-controls="hint" title="Нажмите, чтобы развернуть">Таблица с моделями горелок</a>
             </p>
             <div class="row">
-                <div class="col">
-                    <div class="collapse multi-collapse" id="hint">
-                        <div class="card card-body">
-                            Данные получены эмпирическим путем.
-                            <blockquote>
-                                    На маршруте было истрачено шесть с небольшим баллонов по 450 г для
-                                    приготовления горячих завтраков, ужинов и чая. На костре не готовили ни разу. В
-                                    результате на 12 полных готовок (еда + чай) было потрачено 2700 г газа (225 г на одну
-                                    готовку или 25 г на человека за прием пищи).
-                            </blockquote>
-                            <p>2700/(9*6*2) = 25</p>
-                         
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Модель горелки</th>
-                                        <th>Участников</th>
-                                        <th>Дней</th>
-                                        <th>Приемов пищи в день</th>
-                                        <th>Расход газа на человека в день, г</th>
-                                        <th>Источник</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Quick Track</th>
-                                        <td>9</td>
-                                        <td>6</td>
-                                        <td>2</td>
-                                        <td>25</td>
-                                        <td><a href="http://tkmgtu.ru/files/velo/otchet/1kc_Averina_Nizhegorodskaya_obl_2017.pdf"
-                                                target="_blank">Стр. 72</a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">BRS 3000t</th>
-                                        <td>2</td>
-                                        <td>5</td>
-                                        <td>3</td>
-                                        <td>15</td>
-                                        <td>Пешка по ЧПК ;)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+
+                <div class="collapse multi-collapse" id="hint">
+                    <div class="card card-body">
+                        Данные получены эмпирическим путем.
+                        <blockquote>
+                            На маршруте было истрачено шесть с небольшим баллонов по 450 г для
+                            приготовления горячих завтраков, ужинов и чая. На костре не готовили ни разу. В
+                            результате на 12 полных готовок (еда + чай) было потрачено 2700 г газа (225 г на одну
+                            готовку или 25 г на человека за прием пищи).
+                        </blockquote>
+                        <p>2700/(9*6*2) = 25</p>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Модель горелки</th>
+                                    <th>Ссылка на описание</th>
+                                    <th>Участников</th>
+                                    <th>Дней</th>
+                                    <th>Приемов пищи в день</th>
+                                    <th>Расход газа на человека в день, г</th>
+                                    <th>Источник</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Quick Track</th>
+                                    <td><a href="https://www.splav.ru/catalog/tourism-outdoor/equipment/gas/gorelka-gazovaya-quick-track/" target="_blank">Quick Track в Сплаве</a></td>
+                                    <td>9</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>25</td>
+                                    <td><a href="http://tkmgtu.ru/files/velo/otchet/1kc_Averina_Nizhegorodskaya_obl_2017.pdf"
+                                            target="_blank">Стр. 72</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">BRS 3000t</th>
+                                    <td><a href="http://tinyurl.com/y495n58r" target="_blank">BRS 3000t на AliExpress</a></td>
+                                    <td>2</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                    <td>Пешка по ЧПК ;)</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
+
             </div>
         </div>
 
     </div>
+
+
+
     <footer>
         Copyright &copy; 2019 <a href="../../index.html" target="_blank" title="Перейти на страницу портфолио">Nadezhda
             Dyakova aka LadyVamp</a><br>

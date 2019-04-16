@@ -42,6 +42,7 @@ $(function () {
         console.log('dinner = ', dinner);
 
         var result = 0;
+        var resultBallon = 0; //кол-во баллонов
         //грамм на человека
         // gperson = consumption/15; //    BRS 3000t: 140/15 = 9.3
                                     //Quick Track 185/25 = 7.4
@@ -50,10 +51,12 @@ $(function () {
         powcons = power/consumption;
         console.log('power/consumption = ', powcons);
         result = (person * dinner * day * powcons).toFixed(2);
+      resultBallon = (person * dinner * day * powcons/450).toFixed(2);
         // result = (person * dinner * day * gperson).toFixed(2); //для brs и quick track
         console.log('result = ', result);
         $('#result').val(result);
-
+       console.log('resultBallon = ', resultBallon);
+        $('#resultBallon').val(resultBallon);
 
     });
 });
@@ -76,44 +79,15 @@ $(function () {
         console.log('dinner = ', dinner);
 
         var resultBurner = 0;
+        var resultBurnerBallon = 0;
         resultBurner = (person * dinner * day * consumptionPersonDay).toFixed(2);
+       resultBurnerBallon = (resultBurner/450).toFixed(2);
         console.log('resultBurner = ', resultBurner);
         $('#resultBurner').val(resultBurner);
-
-
-    });
-});
-
-
-//Генератор
-/*$(function () {
-    $(".generator").on("click", function () { //при нажатии на кнопку
-        var len = parseInt($('#len').val()); //взять длину пароля из input
-        var dic = "";
-        var radioValue = $("input:radio[name=radio]:checked").val(); //взять тип словаря из radiobtn
-
-        switch (radioValue) {
-            case 'digit':
-                dic = "1234567890";
-                break;
-            case 'upperCase':
-                dic = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
-                break;
-            case 'lowerCase':
-                dic = "abcdefghijklmnopqrstuvwxyz";
-                break;
-            case 'all':
-                dic = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-                break;
-            case 'allAndSpec':
-                dic = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*";
-                break;
-            default:
-                dic = "abcdefghijklmnopqrstuvwxyz1234567890";
-                break;
-        }
-        generate(len, dic);
+       console.log('resultBurnerBaloon = ', resultBurnerBallon);        $('#resultBurnerBallon').val(resultBurnerBallon);
 
     });
 });
-*/
+
+
+
