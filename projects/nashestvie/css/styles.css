@@ -102,6 +102,11 @@ h5 {
   margin: 20px 0;
   padding: 0 20px;
 }
+.countdown19__schedule img {
+  max-width: 777px;
+  margin: 20px 0;
+  padding: 0 20px;
+}
 #CDT {
   font-size: 60px;
   color: #eee;
@@ -258,5 +263,11 @@ footer a:hover {
   footer, footer a {
     font-size: 1.5rem;
    }
+
+   .countdown19__schedule img {
+    max-width: 360px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
