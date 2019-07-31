@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>CheckApp</title>
   <!--   <base href="./"> -->
-  <base href="/projects/cashback_v1.3">
+  <base href="/projects/cashback_v1.3/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
