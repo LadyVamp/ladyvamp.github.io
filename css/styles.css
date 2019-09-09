@@ -624,6 +624,9 @@
   .vk a:hover {
 	color: #5e81a8;
   }
+  .zen a:hover {
+	color: red;
+  }
   /*
    ----------------------------
    ----- 11. Media Queries -----
