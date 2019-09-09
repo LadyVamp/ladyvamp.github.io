@@ -625,7 +625,10 @@
 	color: #5e81a8;
   }
   .zen a:hover {
-	color: red;
+	color: #f00;
+  }
+  .youtube a:hover {
+	color: #fc011a;
   }
   /*
    ----------------------------
