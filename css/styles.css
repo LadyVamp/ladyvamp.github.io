@@ -54,7 +54,8 @@ body.active {
 	margin: 0;
 }
 
-.no-js #experience-timeline:before, .no-js #experience-timeline:after {
+.no-js #experience-timeline:before,
+.no-js #experience-timeline:after {
 	content: none;
 }
 
@@ -66,6 +67,7 @@ body.active {
 	0% {
 		transform: translateY(-100%);
 	}
+
 	100% {
 		transform: translateY(0);
 	}
@@ -294,7 +296,8 @@ footer {
 	text-align: center;
 }
 
-#lead-content h1, #lead-content h2 {
+#lead-content h1,
+#lead-content h2 {
 	margin: 0;
 }
 
@@ -358,9 +361,11 @@ footer {
 	0% {
 		transform: scale(1, 1);
 	}
+
 	50% {
 		transform: scale(1.2, 1.2);
 	}
+
 	100% {
 		transform: scale(1, 1);
 	}
@@ -541,7 +546,8 @@ footer {
 	margin: 0 0 15px 0;
 }
 
-.education-block p, .education-block ul {
+.education-block p,
+.education-block ul {
 	margin: 0;
 	color: #74808a;
 	font-size: 0.9em;
@@ -602,7 +608,7 @@ footer {
 }
 
 .project-info h3 {
-	font-size: 1.5em;
+	font-size: 1.4em;
 	font-weight: 300;
 	color: #374054;
 	margin: 0 0 15px 0;
@@ -616,6 +622,10 @@ footer {
 
 summary.pointer {
 	cursor: pointer !important;
+}
+
+.adyakova {
+	max-width: 585px;
 }
 
 /*
@@ -675,7 +685,8 @@ summary.pointer {
 	margin: 0 auto;
 }
 
-#contact-form input, #contact-form textarea {
+#contact-form input,
+#contact-form textarea {
 	display: block;
 	width: 100%;
 	padding: 10px;
@@ -687,25 +698,30 @@ summary.pointer {
 	transition: 0.5s ease all;
 }
 
-#contact-form input::-webkit-input-placeholder, #contact-form textarea::-webkit-input-placeholder {
+#contact-form input::-webkit-input-placeholder,
+#contact-form textarea::-webkit-input-placeholder {
 	color: #fff;
 }
 
-#contact-form input:-moz-placeholder, #contact-form textarea:-moz-placeholder {
-	color: #fff;
-	opacity: 1;
-}
-
-#contact-form input::-moz-placeholder, #contact-form textarea::-moz-placeholder {
+#contact-form input:-moz-placeholder,
+#contact-form textarea:-moz-placeholder {
 	color: #fff;
 	opacity: 1;
 }
 
-#contact-form input:-ms-input-placeholder, #contact-form textarea:-ms-input-placeholder {
+#contact-form input::-moz-placeholder,
+#contact-form textarea::-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+}
+
+#contact-form input:-ms-input-placeholder,
+#contact-form textarea:-ms-input-placeholder {
 	color: #fff;
 }
 
-#contact-form input:focus, #contact-form textarea:focus {
+#contact-form input:focus,
+#contact-form textarea:focus {
 	outline: none;
 	background: #16527a;
 }
@@ -755,9 +771,12 @@ summary.pointer {
    */
 
 @media only screen and (max-width: 750px) {
-	#experience-timeline:before, #experience-timeline:after {
+
+	#experience-timeline:before,
+	#experience-timeline:after {
 		left: 23px;
 	}
+
 	.vtimeline-date {
 		width: auto;
 		text-align: left;
@@ -766,9 +785,11 @@ summary.pointer {
 		display: block;
 		margin-left: 70px;
 	}
+
 	.vtimeline-icon {
 		margin-left: 0;
 	}
+
 	.vtimeline-content {
 		margin-left: 70px;
 	}
@@ -781,21 +802,26 @@ summary.pointer {
 		max-height: auto;
 		padding: 100px 15px;
 	}
+
 	#lead-content {
 		position: relative;
 		transform: none;
 		left: auto;
 		top: auto;
 	}
+
 	#lead-content h1 {
 		font-size: 3em;
 	}
+
 	#lead-content h2 {
 		font-size: 1.75em;
 	}
+
 	#about {
 		text-align: center;
 	}
+
 	#about p {
 		text-align: left;
 	}
@@ -810,9 +836,12 @@ summary.pointer {
 		bottom: 0;
 		height: 100%;
 	}
-	#mobile-menu-open, #mobile-menu-close {
+
+	#mobile-menu-open,
+	#mobile-menu-close {
 		display: block;
 	}
+
 	#menu {
 		height: 100%;
 		overflow-y: auto;
@@ -820,37 +849,48 @@ summary.pointer {
 		border-radius: 0;
 		width: 100%;
 	}
+
 	#menu li {
 		display: block;
 		margin-bottom: 10px;
 	}
+
 	#lead-content h1 {
 		font-size: 2em;
 	}
+
 	#lead-content h2 {
 		font-size: 1.3em;
 	}
+
 	#lead-content a {
 		padding: 10px 20px;
 	}
+
 	#lead-down {
 		display: none;
 	}
-	.education-block h3, .education-block span {
+
+	.education-block h3,
+	.education-block span {
 		float: none;
 	}
+
 	.project-image {
 		display: none;
 	}
+
 	.project-info {
 		position: relative;
 		margin: 0;
 		top: auto;
 		transform: none;
 	}
+
 	footer {
 		text-align: center;
 	}
+
 	.social {
 		text-align: center;
 	}
@@ -860,9 +900,11 @@ summary.pointer {
 	#lead-content h1 {
 		font-size: 1.5em;
 	}
+
 	#lead-content h2 {
 		font-size: 1em;
 	}
+
 	#lead-content a {
 		font-size: 0.9em;
 		padding: 5px 10px;
