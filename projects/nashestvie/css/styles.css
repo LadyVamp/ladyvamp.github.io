@@ -62,10 +62,6 @@ h5 {
 h2 {
   color: #227093;
 }
-.btn-link {
-  color: #ffb142;
-  font-size: 30px;
-}
 .center_img img {
   width: 600px;
 }
@@ -82,6 +78,13 @@ h2 {
 }
 .countdown__prices li {
   list-style-type: none;
+}
+.btn-link {
+  color: #ffb142;
+  font-size: 30px;
+}
+.countdown__prices ul {
+  text-align: left;
 }
 #CDT {
   font-size: 60px;

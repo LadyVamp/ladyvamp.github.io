@@ -6,12 +6,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131051815-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
     gtag('config', 'UA-131051815-1');
   </script>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
@@ -73,7 +71,6 @@
           });
         } catch (e) {}
       });
-
       var n = d.getElementsByTagName("script")[0],
         s = d.createElement("script"),
         f = function () {
@@ -82,7 +79,6 @@
       s.type = "text/javascript";
       s.async = true;
       s.src = "https://mc.yandex.ru/metrika/watch.js";
-
       if (w.opera == "[object Opera]") {
         d.addEventListener("DOMContentLoaded", f, false);
       } else {
@@ -169,7 +165,6 @@
       <!-- <div class="col-xs-12 col-sm-6 col-md-3 countdown__prices3">
         Повышение 2
       </div>
-
       <div class="col-xs-12 col-sm-6 col-md-3 countdown__prices4">
         Повышение 3
       </div> -->
@@ -850,7 +845,6 @@
           text: 'Даты'
         }
       },
-
       yAxis: {
         title: {
           text: 'Цена, руб.'
@@ -860,13 +854,11 @@
         headerFormat: '<b>{series.name}</b><br>',
         pointFormat: '{point.x:%e %b}: {point.y:.0f} руб.'
       },
-
       legend: {
         layout: 'vertical',
         align: 'right',
         verticalAlign: 'middle'
       },
-
       plotOptions: {
         spline: {
           marker: {
@@ -874,7 +866,6 @@
           }
         }
       },
-
       series: [{
         name: 'Входной',
         data: [
@@ -932,7 +923,6 @@
           [Date.UTC(2016, 6, 1), 4500]
         ]
       }]
-
     });
   </script>
 
