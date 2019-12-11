@@ -47,10 +47,10 @@ nav .btn {
     color: white; }
 
 .invisible {
-  display: none; }
+  visibility: hidden; }
 
 .visible {
-  display: block; }
+  visibility: visible; }
 
 .btn-person {
   border: none; }
@@ -88,7 +88,8 @@ nav .btn {
     border-radius: 16px;
     margin: 6px;
     color: #6E7782;
-    height: 36px; }
+    height: 36px;
+    padding: 0 10px; }
     .services__btn button:hover {
       background-color: #C90000;
       color: white; }
@@ -185,7 +186,8 @@ nav .btn {
   height: 393px;
   background: #ADB0B3;
   padding: 34px; }
-  .footer .footer__title, .footer p {
+  .footer .footer__title,
+  .footer p {
     color: white; }
 
 .footer__list li {
@@ -237,6 +239,14 @@ nav .btn {
 @media (min-width: 320px) and (max-width: 768px) {
   nav p {
     display: none; }
+  .navbar-brand {
+    padding: 15px 0;
+    position: absolute; }
+  .navbar-toggler:not(:disabled):not(.disabled) {
+    position: absolute;
+    right: 10px; }
+  .btn-person {
+    margin-right: 0; }
   .info {
     margin: 5px;
     background-position: center bottom;
@@ -262,7 +272,8 @@ nav .btn {
   .popular__cards {
     flex-direction: column; }
   .popular__card {
-    min-width: 320px; }
+    width: 288px;
+    margin: 0; }
   .popular__img {
     max-height: 50px; }
   .buy__image {
