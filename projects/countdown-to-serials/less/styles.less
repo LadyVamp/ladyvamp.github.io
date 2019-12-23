@@ -2,10 +2,10 @@
 /* Variables */
 // Палитра https://flatuicolors.com/palette/us
 @bgColor: #636e72;
-@bbtStripColor: #00b894;
+@mwStripColor: #00b894;
 @sherlockStripColor: #0984e3;
-@silicon-valleyStripColor: mix(@bbtStripColor, @sherlockStripColor);
-@black-mirrorStripColor: darken(@bbtStripColor, 30%);
+@silicon-valleyStripColor: mix(@mwStripColor, @sherlockStripColor);
+@black-mirrorStripColor: darken(@mwStripColor, 30%);
 @linkYellow: #fdcb6e;
 
 @stripW: 100%;
@@ -28,33 +28,34 @@ h1 {
 
 .imgSize() {  //Mixin
   height: 200px;
-  width: 100%;
+  // width: 100%;
+  max-width: 340px;
 }
 
 .padding() {
 	padding: 20px;
 }
 
-.bbt__timer, .sherlock__timer, .silicon-valley__timer, .black-mirror__timer {
+.mw__timer, .sherlock__timer, .silicon-valley__timer, .black-mirror__timer {
   font-size: 30px;
   .padding;
 }
 
-.bbt{
-  background-color: @bbtStripColor;
+.mw{
+  background-color: @mwStripColor;
   .stripSize;
 }
 
-.bbt__timer {
-	color: contrast(@bbtStripColor);
+.mw__timer {
+	color: contrast(@mwStripColor);
 }
 
-.bbt__description {
-	color: contrast(@bbtStripColor);
+.mw__description {
+	color: contrast(@mwStripColor);
 	.padding;
 }
 
-.bbt__img img {
+.mw__img img {
 	.imgSize;
 }
 
@@ -98,7 +99,7 @@ h1 {
 }
 
 
-.black-mirror{
+/*.black-mirror{
   background-color: @black-mirrorStripColor;
   .stripSize;
 }
@@ -115,7 +116,14 @@ h1 {
 
 .black-mirror__img img {
 	.imgSize;
+}*/
+
+.row {
+  img {
+    padding: 10px;
+  }
 }
+
 
 footer {
   p {
@@ -130,7 +138,7 @@ footer {
      }
 }
 
-//прижать футер к низу
+//  прижать футер к низу
 * {
   margin: 0;
   padding: 0;
@@ -140,10 +148,32 @@ body {
   height: 100%;
 }
 .container {
-  display: table;
+  // display: table;
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 .row {
   display: table-row;
   height: 100%;
+}
+//  /прижать футер к низу
+
+@media screen and (max-width: 425px){
+  .silicon-valley__img, .mw__img {
+    img {
+      max-width: 265px;
+
+    }
+  }
+  .row {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .row {
+    .col-md-4 {
+      width: 370px;
+    }
+  }
 }
