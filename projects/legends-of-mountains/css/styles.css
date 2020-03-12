@@ -198,6 +198,10 @@ footer a:hover {
   footer, footer a {
     font-size: 1.2rem;
    }
+
+   .video iframe{
+     width: 340px;
+   }
 }
 
 /* Small devices Tablets (≥768px) */
