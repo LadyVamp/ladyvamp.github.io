@@ -69,6 +69,7 @@ body.active {
     0% {
         transform: translateY(-100%);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -363,9 +364,11 @@ footer {
     0% {
         transform: scale(1, 1);
     }
+
     50% {
         transform: scale(1.2, 1.2);
     }
+
     100% {
         transform: scale(1, 1);
     }
@@ -618,7 +621,8 @@ footer {
     margin: 0 0 15px 0;
 }
 
-.adyakova h3, .gallery h3 {
+.adyakova h3,
+.gallery h3 {
     font-size: 1.2em;
 }
 
@@ -636,6 +640,9 @@ summary.pointer {
     max-width: 585px;
 }
 
+.legends-of-mountains span {
+    text-transform: uppercase;
+}
 
 /*
    -------------------------------
@@ -782,10 +789,12 @@ summary.pointer {
    */
 
 @media only screen and (max-width: 750px) {
+
     #experience-timeline:before,
     #experience-timeline:after {
         left: 23px;
     }
+
     .vtimeline-date {
         width: auto;
         text-align: left;
@@ -794,9 +803,11 @@ summary.pointer {
         display: block;
         margin-left: 70px;
     }
+
     .vtimeline-icon {
         margin-left: 0;
     }
+
     .vtimeline-content {
         margin-left: 70px;
     }
@@ -809,21 +820,26 @@ summary.pointer {
         max-height: auto;
         padding: 100px 15px;
     }
+
     #lead-content {
         position: relative;
         transform: none;
         left: auto;
         top: auto;
     }
+
     #lead-content h1 {
         font-size: 3em;
     }
+
     #lead-content h2 {
         font-size: 1.75em;
     }
+
     #about {
         text-align: center;
     }
+
     #about p {
         text-align: left;
     }
@@ -838,10 +854,12 @@ summary.pointer {
         bottom: 0;
         height: 100%;
     }
+
     #mobile-menu-open,
     #mobile-menu-close {
         display: block;
     }
+
     #menu {
         height: 100%;
         overflow-y: auto;
@@ -849,38 +867,48 @@ summary.pointer {
         border-radius: 0;
         width: 100%;
     }
+
     #menu li {
         display: block;
         margin-bottom: 10px;
     }
+
     #lead-content h1 {
         font-size: 2em;
     }
+
     #lead-content h2 {
         font-size: 1.3em;
     }
+
     #lead-content a {
         padding: 10px 20px;
     }
+
     #lead-down {
         display: none;
     }
+
     .education-block h3,
     .education-block span {
         float: none;
     }
+
     .project-image {
         display: none;
     }
+
     .project-info {
         position: relative;
         margin: 0;
         top: auto;
         transform: none;
     }
+
     footer {
         text-align: center;
     }
+
     .social {
         text-align: center;
     }
@@ -890,9 +918,11 @@ summary.pointer {
     #lead-content h1 {
         font-size: 1.5em;
     }
+
     #lead-content h2 {
         font-size: 1em;
     }
+
     #lead-content a {
         font-size: 0.9em;
         padding: 5px 10px;

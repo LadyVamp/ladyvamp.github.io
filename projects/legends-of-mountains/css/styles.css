@@ -1,0 +1,220 @@
+/* Палитра https://colorscheme.ru/#3v31T--kqw0w0 */
+
+/* фон с радиальным градиентом http://blog.harrix.org/article/2056 */
+html, body {min-height:100%;height:100%;margin:0;}
+body {
+  text-align: center;
+	background: url(../img/bk.svg);
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-position: 50% 50%;
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+#noise {
+	position: absolute;
+	width: 100%;
+	background-image: url("../img/noise.png");
+	background-attachment: fixed;
+}
+/* /фон с радиальным градиентом */
+
+h1 {
+  color: #D1A834;
+  font-weight: 700;
+  font-size: 2.3em;
+}
+h2 {
+  color: #6A1B00;
+  font-size: 2em;
+}
+h3 {
+  color: #D1B35E;
+  font-size: 1.7em;
+}
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 0;
+  font-weight: bold;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+  background: #D15C34;
+  color: #fff;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background: #A32A00;
+  color: #fff;
+}
+
+.link {
+  /* color: #518DB4; */
+  color: #669ABC;
+}
+.link:hover {
+  color: #D1A834;
+}
+
+#CDT {
+  font-size: 60px;
+  color: #eee;
+  margin: 30px 0 50px;
+  font-weight: bold;
+}
+#CDT .number-wrapper {
+  margin: 10px;
+  -moz-box-shadow: 0 5px 8px #000000;
+  -webkit-box-shadow: 0 5px 8px #000000;
+  box-shadow: 0 5px 8px #000000;
+  position: relative;
+}
+#CDT .number {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: #000;
+  background-image: linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+  background-image: -o-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+  background-image: -moz-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+  background-image: -webkit-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+  background-image: -ms-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+  -webkit-border-top-right-radius: 7px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 7px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 0 12px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border: 1px solid #555;
+  -moz-box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+  -moz-text-shadow: 0 3px 3px #000000;
+  -webkit-text-shadow: 0 3px 3px #000000;
+  text-shadow: 0 3px 3px #000000;
+}
+#CDT .line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 52%;
+  left: 0;
+  background: #000;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.caption { /*таймер не трогать!!!*/
+  font-size: 12px;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-weight: 400;
+}
+.header img {
+  /* width: 100%; */
+  width: 550px;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+footer p {
+  color: #ffffff;
+}
+footer a {
+  text-decoration: none;
+  color: #fdcb6e;
+}
+footer a:hover {
+  color: #cf8803;
+}
+
+.track {
+  color: orange;
+}
+.track:hover {
+  color: darkorange;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+
+/* Extra small devices Phones (<768px) */
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  
+  .header img {
+    width: 90%;
+  }
+
+  #CDT {
+    font-size: 25px;
+    margin: 30px 0 50px;
+  }
+  .caption {
+    font-size: 1rem;
+  }
+
+  footer, footer a {
+    font-size: 1.2rem;
+   }
+}
+
+/* Small devices Tablets (≥768px) */
+@media only screen and (min-width: 361px) and (max-width:768px){
+  .header img {
+    width: 90%;
+  }
+  #CDT {
+    font-size: 40px;
+    width: 100%;
+    margin: 30px 0 50px;
+  }
+  .caption {
+    font-size: 1.2rem;
+  }
+  footer, footer a {
+    font-size: 1.2rem;
+   }
+}
+
