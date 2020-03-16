@@ -1,4 +1,5 @@
-/* Палитра https://colorscheme.ru/#2S41TjTogw0w0 */
+/* Палитра https://colorscheme.ru/#3v31T--vBw0w0 
+триада, базовый - кусочек неба */
 
 /* фон с радиальным градиентом http://blog.harrix.org/article/2056 */
 html,
@@ -49,6 +50,7 @@ h3 {
   font-size: 1.7em;
 }
 
+/*
 .button {
   display: inline-block;
   padding: 12px 24px;
@@ -66,20 +68,19 @@ h3 {
 .button:active {
   background: #A32A00;
   color: #fff;
-}
+}*/
 
 .link {
-  /* color: #518DB4; */
-  color: #669ABC;
+  color: #3493D0;
 }
 
 .link:hover {
-  color: #D1A834;
+  color: #FDCC3F;
 }
 
 a:hover,
 a:focus {
-  color: orange;
+  color: #FD703F;
 }
 
 #CDT {
