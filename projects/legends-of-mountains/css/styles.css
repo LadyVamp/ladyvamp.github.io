@@ -1,43 +1,54 @@
-/* Палитра https://colorscheme.ru/#3v31T--kqw0w0 */
+/* Палитра https://colorscheme.ru/#2S41TjTogw0w0 */
 
 /* фон с радиальным градиентом http://blog.harrix.org/article/2056 */
-html, body {min-height:100%;height:100%;margin:0;}
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+}
+
 body {
   text-align: center;
-	background: url(../img/bk.svg);
-	background-attachment: fixed;
-	background-repeat: repeat;
-	background-position: 50% 50%;
-	-o-background-size: 100% 100%;
-	-webkit-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	background-size: 100% 100%;
-  color:white;
+  background: url(../img/bk.svg);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: 50% 50%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -khtml-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
 }
+
 #noise {
-	position: absolute;
-	width: 100%;
-	background-image: url("../img/noise.png");
-	background-attachment: fixed;
+  position: absolute;
+  width: 100%;
+  background-image: url("../img/noise.png");
+  background-attachment: fixed;
 }
+
 /* /фон с радиальным градиентом */
 
 h1 {
-  color: #D1A834;
+  color: #FC4000;
   font-weight: 700;
   font-size: 2.3em;
 }
+
 h2 {
-  color: #6A1B00;
+  color: #FCBA00;
   font-size: 2em;
 }
+
 h3 {
-  color: #D1B35E;
+  color: #FDCC3F;
   font-size: 1.7em;
 }
+
 .button {
   display: inline-block;
   padding: 12px 24px;
@@ -61,8 +72,14 @@ h3 {
   /* color: #518DB4; */
   color: #669ABC;
 }
+
 .link:hover {
   color: #D1A834;
+}
+
+a:hover,
+a:focus {
+  color: orange;
 }
 
 #CDT {
@@ -71,6 +88,7 @@ h3 {
   margin: 30px 0 50px;
   font-weight: bold;
 }
+
 #CDT .number-wrapper {
   margin: 10px;
   -moz-box-shadow: 0 5px 8px #000000;
@@ -78,6 +96,7 @@ h3 {
   box-shadow: 0 5px 8px #000000;
   position: relative;
 }
+
 #CDT .number {
   display: inline-block;
   *display: inline;
@@ -118,6 +137,7 @@ h3 {
   -webkit-text-shadow: 0 3px 3px #000000;
   text-shadow: 0 3px 3px #000000;
 }
+
 #CDT .line {
   position: absolute;
   width: 100%;
@@ -129,7 +149,9 @@ h3 {
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
-.caption { /*таймер не трогать!!!*/
+
+.caption {
+  /*таймер не трогать!!!*/
   font-size: 12px;
   position: absolute;
   bottom: -30px;
@@ -139,8 +161,8 @@ h3 {
   color: #fff;
   font-weight: 400;
 }
+
 .header img {
-  /* width: 100%; */
   width: 550px;
 }
 
@@ -148,13 +170,16 @@ footer {
   margin-top: 20px;
   font-size: 1.2rem;
 }
+
 footer p {
   color: #ffffff;
 }
+
 footer a {
   text-decoration: none;
   color: #fdcb6e;
 }
+
 footer a:hover {
   color: #cf8803;
 }
@@ -162,6 +187,7 @@ footer a:hover {
 .track {
   color: orange;
 }
+
 .track:hover {
   color: darkorange;
 }
@@ -176,13 +202,15 @@ footer a:hover {
   h1 {
     font-size: 2.5rem;
   }
+
   h2 {
     font-size: 2.2rem;
   }
+
   h3 {
     font-size: 2rem;
   }
-  
+
   .header img {
     width: 90%;
   }
@@ -191,34 +219,39 @@ footer a:hover {
     font-size: 25px;
     margin: 30px 0 50px;
   }
+
   .caption {
     font-size: 1rem;
   }
 
-  footer, footer a {
+  footer,
+  footer a {
     font-size: 1.2rem;
-   }
+  }
 
-   .video iframe{
-     width: 340px;
-   }
+  .video iframe {
+    width: 340px;
+  }
 }
 
 /* Small devices Tablets (≥768px) */
-@media only screen and (min-width: 361px) and (max-width:768px){
+@media only screen and (min-width: 361px) and (max-width:768px) {
   .header img {
     width: 90%;
   }
+
   #CDT {
     font-size: 40px;
     width: 100%;
     margin: 30px 0 50px;
   }
+
   .caption {
     font-size: 1.2rem;
   }
-  footer, footer a {
-    font-size: 1.2rem;
-   }
-}
 
+  footer,
+  footer a {
+    font-size: 1.2rem;
+  }
+}
