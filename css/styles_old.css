@@ -581,26 +581,23 @@ footer {
     margin-bottom: 50px;
 }
 
+.project {
+    /* position: relative;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 4px; */
+}
+
+/* .design {
+    height: 230px;
+} */
+
 .projects {
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
-
-.project {
-    border: 1px solid #dcd9d9;
-    height: 350px;
-}
-.project__info {
-    padding: 5px;
-}
-.project__img img {
-    height: 200px;
-}
-
-/* .project1 {
-    background: url('../images/angular300.png') no-repeat top center;
-} */
 
 @media only screen and (max-width: 426px) {
     .projects {
@@ -634,6 +631,11 @@ footer {
     font-weight: 300;
     color: #374054;
     margin: 0 0 15px 0;
+}
+
+.adyakova h3,
+.gallery h3 {
+    font-size: 1.2em;
 }
 
 .project-info p {
