@@ -82,6 +82,7 @@ button {
 .btn-spoiler, .btn-spoiler:hover {
   background-color: #341D0A;
   color: #fff;
+  margin-bottom: 10px;
 }
 
 .spoiler .card-body {
