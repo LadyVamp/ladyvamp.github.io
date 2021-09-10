@@ -794,6 +794,22 @@ summary.pointer {
 }
 
 
+#header-banner {
+    background-color: #FFA430;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 100;
+}
+
+#header-banner a:hover {
+    background-color: #FFA430;
+}
+
 /*
    ----------------------------
    ----- 11. Media Queries -----
