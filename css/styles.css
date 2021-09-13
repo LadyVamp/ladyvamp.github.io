@@ -4,13 +4,11 @@
  ------------------------
  */
 
-
 /*
  ---------------------
  ----- 2. Mixins -----
  ---------------------
  */
-
 
 /*
  ----------------------------
@@ -19,7 +17,7 @@
  */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 16px;
 }
 
@@ -28,14 +26,14 @@ body.active {
     z-index: -1;
 }
 
-.no-js #experience-timeline>div {
+.no-js #experience-timeline > div {
     background: #fff;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #dcd9d9;
 }
 
-.no-js #experience-timeline>div h3 {
+.no-js #experience-timeline > div h3 {
     font-size: 1.5em;
     font-weight: 300;
     color: #374054;
@@ -43,14 +41,14 @@ body.active {
     margin: 0;
 }
 
-.no-js #experience-timeline>div h4 {
+.no-js #experience-timeline > div h4 {
     font-size: 1.2em;
     font-weight: 300;
     color: #7e8890;
     margin: 0 0 15px 0;
 }
 
-.no-js #experience-timeline>div p {
+.no-js #experience-timeline > div p {
     color: #74808a;
     font-size: 0.9em;
     margin: 0;
@@ -258,7 +256,7 @@ footer {
 
 .heading:after {
     position: absolute;
-    content: '';
+    content: "";
     top: 100%;
     height: 1px;
     width: 50px;
@@ -271,7 +269,6 @@ footer {
 .background-alt {
     background: #f2f2f5;
 }
-
 
 /*
    --------------------------
@@ -374,7 +371,6 @@ footer {
     }
 }
 
-
 /*
    ---------------------------
    ----- 5. About Styles -----
@@ -394,7 +390,6 @@ footer {
     color: #74808a;
     margin: 0;
 }
-
 
 /*
    --------------------------------
@@ -420,7 +415,7 @@ footer {
 
 #experience-timeline:before {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     bottom: 0;
     left: 303px;
@@ -433,7 +428,7 @@ footer {
 
 #experience-timeline:after {
     position: absolute;
-    content: '';
+    content: "";
     width: 3px;
     height: 40px;
     background: #3498db;
@@ -512,13 +507,11 @@ ul > li {
     font-size: 0.9em;
     margin: 0;
 }
-b { 
+b {
     color: #74808a;
     font-size: 0.9em;
     margin: 0;
 }
-
-
 
 /*
    -------------------------------
@@ -574,7 +567,6 @@ b {
 .education-block ul {
     padding: 0 0 0 15px;
 }
-
 
 /*
    -------------------------------
@@ -690,7 +682,6 @@ summary.pointer {
     font-size: 1.2em;
 }
 
-
 /*
    -------------------------------
    ----- 10. Contact Styles -----
@@ -793,9 +784,8 @@ summary.pointer {
     color: #fc011a;
 }
 
-
 #header-banner {
-    background-color: #FFA430;
+    background-color: #ffa430;
     padding: 10px;
     text-align: center;
     position: fixed;
@@ -807,7 +797,21 @@ summary.pointer {
 }
 
 #header-banner a:hover {
-    background-color: #FFA430;
+    background-color: #ffa430;
+}
+
+.header-banner-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    padding: .25em .25em;
+    color: black;
+    border: 0;
+    border-radius: 50%;
+    opacity: .5;
 }
 
 /*
@@ -817,7 +821,6 @@ summary.pointer {
    */
 
 @media only screen and (max-width: 750px) {
-
     #experience-timeline:before,
     #experience-timeline:after {
         left: 23px;
@@ -931,7 +934,7 @@ summary.pointer {
         margin: 0;
         top: auto;
         transform: none;
-    }    
+    }
 
     footer {
         text-align: center;
