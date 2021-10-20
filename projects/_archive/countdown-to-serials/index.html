@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Countdown to serials</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" media="screen" href="css/normalize.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+
+    <!-- LESS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.3/less.js"></script>
+    <link href="less/styles.less" rel="stylesheet">
+    <script>
+        less = {
+            env: 'development'
+        };
+    </script>
+    <script src="js/less.js"></script>
+    <script>
+        less.watch();
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Countdown to serials</h1>
+
+        <div class="row silicon-valley">
+            <div class="col-md-4 silicon-valley__timer">
+                <div id="silicon-valley"></div>
+            </div>
+            <div class="col-md-4 silicon-valley__description">
+                Name: Кремниевая долина <br/> Original Name: Silicon Valley <br/> Season Number: 7 <br/> Release Date: весна 2021
+            </div>
+            <div class="col-md-4 silicon-valley__img">
+                <img src="img/silicon_valley.png" alt="silicon_valley">
+            </div>
+        </div>
+
+        <div class="row mw">
+            <div class="col-md-4 mw__timer">
+                <div id="mw"></div>
+            </div>
+            <div class="col-md-4 mw__description">
+                Name: Чудотворцы <br/> Original Name: Miracle Workers <br/> Season Number: 2 <br/> Release Date: 28 января 2020
+            </div>
+            <div class="col-md-4 mw__img">
+                <img src="img/miracle_workers.jpg" alt="mw">
+            </div>
+        </div>
+
+        <div class="row sherlock">
+            <div class="col-md-4 sherlock__timer">
+                <div id="sherlock"></div>
+            </div>
+            <div class="col-md-4 sherlock__description">
+                Name: Шерлок <br/> Original Name: Sherlock <br/> Season Number: 5 <br/> Release Date: 1 января 2020
+            </div>
+            <div class="col-md-4 sherlock__img">
+                <img src="img/sherlock.png" alt="sherlock">
+            </div>
+        </div>
+
+        <!-- <div class="row black-mirror">
+            <div class="col-md-4 black-mirror__timer">
+                <div id="black-mirror"></div>
+            </div>
+            <div class="col-md-4 black-mirror__description">
+                Name: Черное зеркало <br/> Original Name: Black Mirror <br/> Season Number: 4 <br/> Release Date: 12 февраля 2019
+            </div>
+            <div class="col-md-4 black-mirror__img">
+                <img src="img/black_mirror.png" alt="black_mirror">
+            </div>
+        </div> -->
+
+
+        <script>
+            $("#mw")
+                .countdown("2020/01/28", function(event) {
+                    $(this).text(
+                        event.strftime('%D days %H:%M:%S')
+                    );
+                });
+
+            $("#sherlock")
+                .countdown("2020/01/01", function(event) {
+                    $(this).text(
+                        event.strftime('%D days %H:%M:%S')
+                    );
+                });
+
+            $("#silicon-valley")
+                .countdown("2021/03/01", function(event) {
+                    $(this).text(
+                        event.strftime('%D days %H:%M:%S')
+                    );
+                });
+
+            // $("#black-mirror")
+            //     .countdown("2019/02/12", function(event) {
+            //         $(this).text(
+            //             event.strftime('%D days %H:%M:%S')
+            //         );
+            //     });
+        </script>
+
+        <footer>
+            <p>
+                Copyright &copy; 2019 <a href="../../index.html" target="_blank" title="Перейти на страницу портфолио">Nadezhda Dyakova aka LadyVamp</a><br>
+            </p>
+        </footer>
+
+    </div>
+    <!--/container-->
+
+</body>
+
+</html>

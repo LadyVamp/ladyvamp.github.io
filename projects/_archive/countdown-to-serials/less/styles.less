@@ -1,0 +1,179 @@
+/* Для компиляции less запустить Koala и сделать drag-and-drop / refresh */
+/* Variables */
+// Палитра https://flatuicolors.com/palette/us
+@bgColor: #636e72;
+@mwStripColor: #00b894;
+@sherlockStripColor: #0984e3;
+@silicon-valleyStripColor: mix(@mwStripColor, @sherlockStripColor);
+@black-mirrorStripColor: darken(@mwStripColor, 30%);
+@linkYellow: #fdcb6e;
+
+@stripW: 100%;
+@stripH: 215px;
+
+body {
+  background-color: @bgColor;
+  color: softlight(@bgColor, #fff);
+  font-family: 'Helvetica Neue','Helvetica','Arial', sans-serif;
+}
+
+h1 {
+ color: @linkYellow;
+}
+
+.stripSize() {   //Mixin
+  width: @stripW;
+  height: @stripH;
+}
+
+.imgSize() {  //Mixin
+  height: 200px;
+  // width: 100%;
+  max-width: 340px;
+}
+
+.padding() {
+	padding: 20px;
+}
+
+.mw__timer, .sherlock__timer, .silicon-valley__timer, .black-mirror__timer {
+  font-size: 30px;
+  .padding;
+}
+
+.mw{
+  background-color: @mwStripColor;
+  .stripSize;
+}
+
+.mw__timer {
+	color: contrast(@mwStripColor);
+}
+
+.mw__description {
+	color: contrast(@mwStripColor);
+	.padding;
+}
+
+.mw__img img {
+	.imgSize;
+}
+
+
+
+.sherlock{
+  background-color: @sherlockStripColor;
+  .stripSize;
+}
+
+.sherlock__timer {
+	color: contrast(@sherlockStripColor);
+}
+
+.sherlock__description {
+	color: contrast(@sherlockStripColor);
+	.padding;
+}
+
+.sherlock__img img {
+	.imgSize;
+}
+
+
+.silicon-valley{
+  background-color: @silicon-valleyStripColor;
+  .stripSize;
+}
+
+.silicon-valley__timer {
+	color: contrast(@silicon-valleyStripColor);
+}
+
+.silicon-valley__description {
+	color: contrast(@silicon-valleyStripColor);
+	.padding;
+}
+
+.silicon-valley__img img {
+	.imgSize;
+}
+
+
+/*.black-mirror{
+  background-color: @black-mirrorStripColor;
+  .stripSize;
+}
+
+.black-mirror__timer {
+	color: contrast(@black-mirrorStripColor);
+  font-size: 30px;
+}
+
+.black-mirror__description {
+	color: contrast(@black-mirrorStripColor);
+	.padding;
+}
+
+.black-mirror__img img {
+	.imgSize;
+}*/
+
+.row {
+  img {
+    padding: 10px;
+  }
+}
+
+
+footer {
+  p {
+    color: contrast(@bgColor);
+  }
+   a {
+     text-decoration: none;
+     color: @linkYellow;
+   }
+     a:hover {
+         color: darken(@linkYellow, 30%);
+     }
+}
+
+//  прижать футер к низу
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  // display: table;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.row {
+  display: table-row;
+  height: 100%;
+}
+//  /прижать футер к низу
+
+@media screen and (max-width: 425px){
+  .silicon-valley__img, .mw__img {
+    img {
+      max-width: 265px;
+
+    }
+  }
+  .row {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .row {
+    .col-md-4 {
+      width: 370px;
+    }
+  }
+}
